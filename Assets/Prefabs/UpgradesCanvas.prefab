@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statText: {fileID: 5872758427573070504}
   statSlider: {fileID: 2415964460635133441}
+  state: 1
 --- !u!1 &1167686703989552953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,6 +2319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statText: {fileID: 1365837504197567156}
   statSlider: {fileID: 2585196553350824213}
+  state: 0
 --- !u!1 &6188081297555870728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,3 +3767,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statText: {fileID: 4371563266333009175}
   statSlider: {fileID: 851073828935204314}
+  state: 2

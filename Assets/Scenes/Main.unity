@@ -548,10 +548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914aa6b58c22f4c3e95c4ea8f873353b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focusPoints: 0
-  engagement: 0
-  comprehension: 0
-  burnout: 0
   attentiveStudents: 0
   learningStudents: 0
   burnoutStudent: 0
@@ -1399,6 +1395,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2949842979694459222, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4455442148249816074, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1507,14 +1507,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradesCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 6228476841664355096, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646247110915506766, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: state
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6782852909036747808, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1534,10 +1526,6 @@ PrefabInstance:
     - target: {fileID: 6782852909036747808, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601728110410327072, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: state
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7978370778424176719, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
