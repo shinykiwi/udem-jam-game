@@ -33,11 +33,21 @@ public class GameManager : MonoBehaviour
     public int learningStudents;
     public int burnoutStudent;
 
-    [SerializeField] private UnityEvent<int> onFocusChange;
-    [SerializeField] private UnityEvent<float> onEngagementChange;
-    [SerializeField] private UnityEvent<float> onComprehensionChange;
-    [SerializeField] private UnityEvent<float> onBurnoutChange;
-    
+    public Action<int> onFocusChange;
+    public Action<float> onEngagementChange;
+    public Action<float> onComprehensionChange;
+    public Action<float> onBurnoutChange;
+
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            addFocusPoint(10);
+            addBurnout(0.2f);
+            addComprehension(0f);
+        }
+    }
 
     public void addFocusPoint(int value)
     {

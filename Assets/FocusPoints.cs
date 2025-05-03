@@ -1,9 +1,16 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class FocusPoints : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textMeshPro;
+
+
+    public void Start()
+    {
+        GameManager.Instance.onFocusChange += SetFocusPoints;
+    }
 
     public void SetFocusPoints(int val)
     {
