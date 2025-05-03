@@ -42,24 +42,24 @@ public class GameManager : MonoBehaviour
     public void addFocusPoint(int value)
     {
         focusPoints = Mathf.Max(0, focusPoints + value);
-        onFocusChange.Invoke(focusPoints);
+        onFocusChange?.Invoke(focusPoints);
     }
     public void addEngagement(float value)
     {
         engagement = Mathf.Clamp(engagement + value, 0f, 1);
-        onEngagementChange.Invoke(engagement);
+        onEngagementChange?.Invoke(engagement);
     }
     
     public void addComprehension(float value)
     {
         comprehension = Mathf.Clamp(comprehension + value, 0f, 1);
-        onComprehensionChange.Invoke(comprehension);
+        onComprehensionChange?.Invoke(comprehension);
     }
     
     public void addBurnout(float value)
     {
         burnout = Mathf.Clamp(burnout + value, 0f, 1);
-        onBurnoutChange.Invoke(burnout);
+        onBurnoutChange?.Invoke(burnout);
     }
     
 }
