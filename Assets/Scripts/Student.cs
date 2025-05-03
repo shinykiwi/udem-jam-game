@@ -6,9 +6,22 @@ public class Student : MonoBehaviour
 {
     private Outline outline;
     private EmoteController emoteController;
-    
-    public EmoteController Emote { get; private set; }
+    private StudentBrain studentBrain;
 
+    public EmoteController Emote
+    {
+        get
+        {
+            return emoteController;
+        }
+        
+        private set
+        {
+            emoteController = value;
+            studentBrain.emoteController = emoteController;
+        }
+    }
+    
     private void Start()
     {
         if (!outline)
