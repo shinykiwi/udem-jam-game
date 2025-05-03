@@ -1,0 +1,34 @@
+using UnityEngine;
+
+public class MusicPlayer : MonoBehaviour
+{
+    private AudioSource audioSource;
+    public AudioClip[] songs;
+    public float volume;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        audioSource= GetComponent<AudioSource>();
+        if (!audioSource.isPlaying)
+        {
+            ChangeSong(Random.Range(0, songs.Length));
+        }
+    }
+
+    public void ChangeSong(int songIndex)
+    {
+        audioSource.clip = songs[songIndex];
+        audioSource.Play();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        audioSource.volume= volume;
+        if (!audioSource.isPlaying)
+        {
+            ChangeSong(Random.Range(0, songs.Length));
+        }
+    }
+}
