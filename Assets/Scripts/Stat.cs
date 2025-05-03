@@ -14,19 +14,18 @@ public class Stat : MonoBehaviour
         Engagement, Comprehension, Burnout
     }
 
-
     public void Start()
     {
         switch (state)
         {
             case MyEnum.Engagement:
-                GameManager.Instance.onEngagementChange += SetStat;
+                GameManager.Instance.OnEngagementChanged += SetStat;
                 break;
             case MyEnum.Comprehension:
-                GameManager.Instance.onComprehensionChange += SetStat;
+                GameManager.Instance.OnComprehensionChanged += SetStat;
                 break; 
             case MyEnum.Burnout:
-                GameManager.Instance.onBurnoutChange += SetStat;
+                GameManager.Instance.OnBurnoutChanged += SetStat;
                 break;
         }
     }
