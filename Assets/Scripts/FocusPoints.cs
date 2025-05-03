@@ -9,7 +9,7 @@ public class FocusPoints : MonoBehaviour
 
     public void Start()
     {
-        GameManager.Instance.onFocusChange += SetFocusPoints;
+        GameManager.Instance.OnFocusPointsChanged += SetFocusPoints;
     }
 
     public void SetFocusPoints(int val)
