@@ -18,7 +18,7 @@ public class Student : MonoBehaviour
         private set
         {
             emoteController = value;
-            studentBrain.emoteController = emoteController;
+            studentBrain.Emote = emoteController;
         }
     }
     
