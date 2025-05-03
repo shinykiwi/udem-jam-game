@@ -7,6 +7,8 @@ public class Student : MonoBehaviour
     private Outline outline;
     private EmoteController emoteController;
     private StudentBrain studentBrain;
+    
+    public StudentBrain Brain { get; private set; }
 
     public EmoteController Emote
     {

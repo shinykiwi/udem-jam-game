@@ -12,15 +12,22 @@ public class Player : MonoBehaviour
 
     public void OnClickObject()
     {
-        // Clicks on a student
-        if (playerRaycast.LastStudent)
-        {
-            SoundManager.PlaySound(SoundManager.SoundType.SELECT);
-            EmoteController emote = playerRaycast.LastStudent.Emote;
-            
-            emote.StopEmoting();
-            
-        }
+        if (!playerRaycast.LastStudent) return;
         
+        // --- Clicking on a student ---
+        
+        // Play a sound
+        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
+        
+        
+        EmoteController emote = playerRaycast.LastStudent.Emote;
+
+        StudentBrain studentBrain = playerRaycast.LastStudent.Brain;
+        
+        
+        emote.StopEmoting();
+
+        
+
     }
 }

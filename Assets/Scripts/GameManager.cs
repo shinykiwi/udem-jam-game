@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     public float Engagement
     {
         get => engagement;
-        private set
+        set
         {
             engagement = Mathf.Clamp(engagement + value, 0f, 1);
             OnEngagementChanged?.Invoke(engagement);

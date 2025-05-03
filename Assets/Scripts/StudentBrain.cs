@@ -27,8 +27,13 @@ public class StudentBrain : MonoBehaviour
         
         private set
         {
+            StudentState oldState = state;
             state = value;
-            UpdateState();
+            
+            if (oldState != state)
+            {
+                UpdateState();
+            }
         }
     }
     
@@ -36,7 +41,19 @@ public class StudentBrain : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Seconds between rolls for "+name + ": " + studentData.secondsBetweenRolls);
+        Debug.Log("Seconds between rolls for " + name + ": " + studentData.secondsBetweenRolls);
+        Debug.Log("Learning tendency " + studentData.learningTendency);
+        Debug.Log("Attentive tendency " + studentData.attentiveTendency);
+        Debug.Log("Burnout tendency " + studentData.burnoutTendency);
+
+        GameManager.Instance.Comprehension = 0.9f;
+        GameManager.Instance.Engagement = 0.6f;
+        GameManager.Instance.Burnout = 0.2f;
+        
+        Debug.Log("GameManager Comprehension " + GameManager.Instance.Comprehension);
+        Debug.Log("GameManager Engagement " + GameManager.Instance.Engagement);
+        Debug.Log("GameManager Burntout " + GameManager.Instance.Burnout);
+        
         StartCoroutine(RollDiceContinuously());
     }
 
@@ -98,8 +115,14 @@ public class StudentBrain : MonoBehaviour
         {
             // If it passes, change the state to learning
             State = StudentState.Learning;
+            Debug.Log("Success!");
         }
-        Debug.Log(rand + "<= " + learningRoll);
+        else
+        {
+            Debug.Log("No luck!");
+        }
+        
+        //Debug.Log(rand + "<= " + learningRoll);
     }
 
     private void RollAttentiveDice()
@@ -116,9 +139,14 @@ public class StudentBrain : MonoBehaviour
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
+            Debug.Log("Success!");
+        }
+        else
+        {
+            Debug.Log("No luck!");
         }
         
-        Debug.Log(rand + "<= " + attentiveRoll);
+        //Debug.Log(rand + "<= " + attentiveRoll);
     }
 
     private void RollBurntOutDice()
@@ -129,8 +157,13 @@ public class StudentBrain : MonoBehaviour
         if (rand <= burnoutRoll)
         {
             State = StudentState.BurntOut;
+            Debug.Log("Success!");
+        }
+        else
+        {
+            Debug.Log("No luck!");
         }
         
-        Debug.Log(rand + "<= " + burnoutRoll);
+        //Debug.Log(rand + "<= " + burnoutRoll);
     }
 }
