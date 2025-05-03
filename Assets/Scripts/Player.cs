@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
         // Clicks on a student
         if (playerRaycast.LastStudent)
         {
+            SoundManager.PlaySound(SoundManager.SoundType.SELECT);
             EmoteController emote = playerRaycast.LastStudent.Emote;
             
             emote.StopEmoting();

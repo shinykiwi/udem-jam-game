@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class StudentBrain : MonoBehaviour
 {
-    public EmoteController emoteController;
-    
     public enum StudentState
     {
         Idle,
@@ -12,9 +10,12 @@ public class StudentBrain : MonoBehaviour
         Attentive,
         BurntOut
     }
-
-    private StudentState state;
     
+    private EmoteController emoteController;
+    
+    public EmoteController Emote { get; set; }
+    
+    private StudentState state;
     public StudentState State
     {
         get { return state; }
@@ -25,6 +26,8 @@ public class StudentBrain : MonoBehaviour
             UpdateState();
         }
     }
+    
+    [SerializeField] private StudentData studentData;
 
     private void UpdateState()
     {

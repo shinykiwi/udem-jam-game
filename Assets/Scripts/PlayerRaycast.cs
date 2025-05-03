@@ -6,6 +6,8 @@ public class PlayerRaycast : MonoBehaviour
 
     private CursorController cursorController;
 
+    bool playedSound = false;
+
     private void Start()
     {
         cursorController = GetComponentInChildren<CursorController>();
@@ -16,6 +18,7 @@ public class PlayerRaycast : MonoBehaviour
         LastStudent?.HideOutline();
         LastStudent = null;
         cursorController.SetDefaultCursor();
+        playedSound = false;
     }
 
     void Update()
@@ -33,6 +36,11 @@ public class PlayerRaycast : MonoBehaviour
                 LastStudent = student;
                 LastStudent.ShowOutline();
                 cursorController.SetClickableCursor();
+                if (!playedSound)
+                {
+                    SoundManager.PlaySound(SoundManager.SoundType.CURSOR);
+                    playedSound = true;
+                }
             }
 
             else
