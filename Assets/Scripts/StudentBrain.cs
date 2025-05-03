@@ -42,4 +42,10 @@ public class StudentBrain : MonoBehaviour
                 throw new NotImplementedException();
         }
     }
+
+    // Constantly rolling the dice on whether a student might change states
+    private void Update()
+    {
+        
+    }
 }
