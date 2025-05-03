@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     private float comprehension;
     private float burnout;
     
+    
     // Events
     public event Action<int> OnFocusPointsChanged;
     public event Action<float> OnEngagementChanged;
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
         get => focusPoints;
         set
         {
-            focusPoints = Mathf.Max(0, focusPoints + value);
+            focusPoints = Mathf.Max(0, value);
             OnFocusPointsChanged?.Invoke(focusPoints);
         } 
     }
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
         get => engagement;
         set
         {
-            engagement = Mathf.Clamp(engagement + value, 0f, 1);
+            engagement = Mathf.Clamp(value, 0f, 1);
             OnEngagementChanged?.Invoke(engagement);
         }
     }
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
         get => comprehension;
         set
         {
-            comprehension = Mathf.Clamp(comprehension + value, 0f, 1);
+            comprehension = Mathf.Clamp( value, 0f, 1);
             OnComprehensionChanged?.Invoke(comprehension);
         } 
     }
@@ -69,7 +70,7 @@ public class GameManager : MonoBehaviour
         get => burnout;
         set
         {
-            burnout = Mathf.Clamp(burnout + value, 0f, 1);
+            burnout = Mathf.Clamp(value, 0f, 1);
             OnBurnoutChanged?.Invoke(burnout);
         } 
     }
@@ -78,5 +79,15 @@ public class GameManager : MonoBehaviour
     public int attentiveStudents;
     public int learningStudents;
     public int burnoutStudent;
-    
+
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Engagement +=0.1f;
+            Comprehension += 0.5f;
+            FocusPoints+=1;
+        }
+    }
 }
