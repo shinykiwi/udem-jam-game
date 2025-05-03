@@ -11,8 +11,11 @@ public class StudentBrain : MonoBehaviour
         Idle,
         Learning,
         Attentive,
-        BurntOut
+        BurntOut,
+        Question,
     }
+
+    private bool canRoll = true;
     
     private EmoteController emoteController;
     public EmoteController Emote { get; set; }
@@ -31,32 +34,47 @@ public class StudentBrain : MonoBehaviour
     
     [SerializeField] private StudentData studentData;
 
+    private void Start()
+    {
+        Debug.Log("Seconds between rolls for "+name + ": " + studentData.secondsBetweenRolls);
+        StartCoroutine(RollDiceContinuously());
+    }
+
     private void UpdateState()
     {
         switch (State)
         {
             case StudentState.Idle:
+                Emote.EmoteBored();
                 break;
             case StudentState.Learning:
+                Emote.EmoteLearning();
                 break;
             case StudentState.Attentive:
+                Emote.EmoteHappy();
                 break;
             case StudentState.BurntOut:
+                Emote.EmoteUnhappy();
+                break;
+            case StudentState.Question:
+                Emote.EmoteQuestion();
                 break;
             default:
                 throw new NotImplementedException();
         }
     }
 
-    // Constantly rolling the dice on whether a student might change states
     private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            canRoll = !canRoll;
+        }
     }
 
     IEnumerator RollDiceContinuously()
     {
-        while (true)
+        while (canRoll)
         {
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
             
@@ -70,34 +88,49 @@ public class StudentBrain : MonoBehaviour
     private void RollLearningDice()
     {
         // ex. 0.2 * 0.9 = 0.18
-        float learningRoll = studentData.learningTendency * GameManager.Instance.comprehension;
+        float learningRoll = studentData.learningTendency * GameManager.Instance.Comprehension;
 
         // ex. check if a random float is less than or equal to 0.18, thus passing the check
         // like rolling a die
-        if (Random.Range(0, 1) <= (learningRoll))
+        
+        float rand = Random.Range(0f, 1f);
+        if (rand <= (learningRoll))
         {
             // If it passes, change the state to learning
             State = StudentState.Learning;
         }
+        Debug.Log(rand + "<= " + learningRoll);
     }
 
     private void RollAttentiveDice()
     {
-        float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.engagement;
+        float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.Engagement;
 
-        if (Random.Range(0,1) <= attentiveRoll)
+        // If the student is already attentive, they are more likely to stay attentive
+        if (State == StudentState.Attentive)
+        {
+            attentiveRoll *= 2;
+        }
+        
+        float rand = Random.Range(0f, 1f);
+        if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
         }
+        
+        Debug.Log(rand + "<= " + attentiveRoll);
     }
 
     private void RollBurntOutDice()
     {
-        float burnoutRoll = studentData.burnoutTendency * GameManager.Instance.burnout;
+        float burnoutRoll = studentData.burnoutTendency * GameManager.Instance.Burnout;
 
-        if (Random.Range(0,1) <= burnoutRoll)
+        float rand = Random.Range(0f, 1f);
+        if (rand <= burnoutRoll)
         {
             State = StudentState.BurntOut;
         }
+        
+        Debug.Log(rand + "<= " + burnoutRoll);
     }
 }

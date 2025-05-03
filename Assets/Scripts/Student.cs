@@ -36,7 +36,8 @@ public class Student : MonoBehaviour
         }
         
         outline.enabled = false;
-        
+
+        studentBrain = GetComponentInChildren<StudentBrain>();
         Emote = gameObject.GetComponentInChildren<EmoteController>();
         
         if (!Emote)

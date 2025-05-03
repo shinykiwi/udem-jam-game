@@ -21,45 +21,40 @@ public class GameManager : MonoBehaviour
     }
     
     // Points
-    public int focusPoints;
+    private int focusPoints;
     
     // Stats
-    public float engagement;
-    public float comprehension;
-    public float burnout;
+    private float engagement;
+    private float comprehension;
+    private float burnout;
+
+    public int FocusPoints
+    {
+        get => focusPoints;
+        set => focusPoints = Mathf.Max(0, focusPoints + value);
+    }
+    
+    public float Engagement
+    {
+        get => engagement;
+        private set => engagement = Mathf.Clamp(engagement + value, 0f, 1);
+    }
+
+    public float Comprehension
+    {
+        get => comprehension;
+        set => comprehension = Mathf.Clamp(comprehension + value, 0f, 1);
+    }
+
+    public float Burnout
+    {
+        get => burnout;
+        set => burnout = Mathf.Clamp(burnout + value, 0f, 1);
+    }
     
     // Number of attentive, learning, burnout students
     public int attentiveStudents;
     public int learningStudents;
     public int burnoutStudent;
-
-    [SerializeField] private UnityEvent<int> onFocusChange;
-    [SerializeField] private UnityEvent<float> onEngagementChange;
-    [SerializeField] private UnityEvent<float> onComprehensionChange;
-    [SerializeField] private UnityEvent<float> onBurnoutChange;
-    
-
-    public void addFocusPoint(int value)
-    {
-        focusPoints = Mathf.Max(0, focusPoints + value);
-        onFocusChange?.Invoke(focusPoints);
-    }
-    public void addEngagement(float value)
-    {
-        engagement = Mathf.Clamp(engagement + value, 0f, 1);
-        onEngagementChange?.Invoke(engagement);
-    }
-    
-    public void addComprehension(float value)
-    {
-        comprehension = Mathf.Clamp(comprehension + value, 0f, 1);
-        onComprehensionChange?.Invoke(comprehension);
-    }
-    
-    public void addBurnout(float value)
-    {
-        burnout = Mathf.Clamp(burnout + value, 0f, 1);
-        onBurnoutChange?.Invoke(burnout);
-    }
     
 }
