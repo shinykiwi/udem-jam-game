@@ -1,9 +1,9 @@
-using System;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerRaycast : MonoBehaviour
 {
-    private Student lastStudent;
+    public Student LastStudent { get; private set; }
+
     private CursorController cursorController;
 
     private void Start()
@@ -13,8 +13,8 @@ public class Player : MonoBehaviour
 
     private void Dehover()
     {
-        lastStudent?.HideOutline();
-        lastStudent = null;
+        LastStudent?.HideOutline();
+        LastStudent = null;
         cursorController.SetDefaultCursor();
     }
 
@@ -30,8 +30,8 @@ public class Player : MonoBehaviour
 
             if (hitObject.GetComponent<Student>() is { } student)
             {
-                lastStudent = student;
-                lastStudent.ShowOutline();
+                LastStudent = student;
+                LastStudent.ShowOutline();
                 cursorController.SetClickableCursor();
             }
 

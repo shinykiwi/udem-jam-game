@@ -5,6 +5,9 @@ using UnityEngine;
 public class Student : MonoBehaviour
 {
     private Outline outline;
+    private EmoteController emoteController;
+    
+    public EmoteController Emote { get; private set; }
 
     private void Start()
     {
@@ -20,6 +23,13 @@ public class Student : MonoBehaviour
         }
         
         outline.enabled = false;
+        
+        Emote = gameObject.GetComponentInChildren<EmoteController>();
+        
+        if (!Emote)
+        {
+            Debug.LogWarning("No emote controller found");
+        }
     }
 
     public void HideOutline()
@@ -30,10 +40,5 @@ public class Student : MonoBehaviour
     public void ShowOutline()
     {
         outline.enabled = true;
-    }
-
-    public void Learning()
-    {
-        
     }
 }
