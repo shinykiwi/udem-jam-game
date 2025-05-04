@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: NoPhones
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  upgradeName: 
-  category: 0
+  upgradeName: No Phones Allowed
   upgradeDescription: 
   cost: 0
-  coUpgradeItems: []
   engagementGain: 0
   comprehensionGain: 0
   burnoutGain: 0

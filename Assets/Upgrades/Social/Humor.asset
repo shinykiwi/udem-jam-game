@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: Humor
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  upgradeName: 
-  category: 0
+  upgradeName: Humor
   upgradeDescription: 
   cost: 0
-  coUpgradeItems: []
   engagementGain: 0
   comprehensionGain: 0
   burnoutGain: 0

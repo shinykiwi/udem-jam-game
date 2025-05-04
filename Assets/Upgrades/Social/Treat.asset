@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: Treat
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  upgradeName: Strict
-  category: 0
+  upgradeName: Treats
   upgradeDescription: 'You enfroce a unyielding decipline with no room for exceptions.
     With this upgrade, you enforce a rigid set of rules that must be followed at
     all times, and any deviation or disruption is immediately addressed with a consequence. '
   cost: 0
-  subUpgradeItems: []
   engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0.05

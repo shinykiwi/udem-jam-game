@@ -9,13 +9,9 @@ public class UpgradeItem : ScriptableObject
         Teaching,
         Ability
     }
-    public Sprite sprite;   
-    
     public string upgradeName;
-    public Category category;
-    public string upgradeDescription;
+    public string description;
     public int cost;
-    public Upgrade[] coUpgradeItems;
 
     public float engagementGain;
     public float comprehensionGain;
