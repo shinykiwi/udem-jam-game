@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Educational Apps
+  frenchName: "Applications \xC9ducatives"
   description: Employ students to download apps that could be helpful for studying
+  frenchDescription: "Encouragez les \xE9tudiants \xE0 utiliser des applications
+    qui pourraient les aider \xE0 apprendre la mati\xE8re"
   cost: 3
   engagementGain: 0.3
   comprehensionGain: 0

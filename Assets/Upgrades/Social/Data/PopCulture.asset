@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Pop Culture Refrences
+  frenchName: "R\xE9f\xE9rences \xE0 la Culture Pop"
   description: Make pop culture references in your class relating your topics to
     movies, games and TV Shows
+  frenchDescription: "Faites des r\xE9f\xE9rences \xE0 la culture pop en r\xE9f\xE9rant
+    la mati\xE8re \xE0 des films, jeux et \xE9missions de t\xE9l\xE9vision "
   cost: 1
   engagementGain: 0.1
   comprehensionGain: 0

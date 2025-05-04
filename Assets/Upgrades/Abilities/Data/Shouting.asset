@@ -17,7 +17,8 @@ MonoBehaviour:
   frenchName: Crier
   description: You start shouting at students who are being disruptive before kicking
     them out and calling their parents
-  frenchDescription: "Vous commencez \xE0 crier aux \xE9tudiants d\xE9rangeants"
+  frenchDescription: "Vous commencez \xE0 crier aux \xE9tudiants d\xE9rangeants avant
+    de les expulser"
   cost: 1
   engagementGain: 0
   comprehensionGain: 0

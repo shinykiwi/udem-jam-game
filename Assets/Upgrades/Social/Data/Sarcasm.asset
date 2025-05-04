@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Sarcasm
+  frenchName: Sarcasme
   description: You're witty, sharp but also a bit too cutting. Your scarcasm gets
     laughs from few but confuses others and alienates many
+  frenchDescription: "Tu es perspicace, mais aussi un peu mordant. Ton manque de
+    rigueur fait rire peu de gens et en d\xE9route d'autres et en ali\xE8ne beaucoup
+    d'autres."
   cost: 2
   engagementGain: -0.2
   comprehensionGain: 0

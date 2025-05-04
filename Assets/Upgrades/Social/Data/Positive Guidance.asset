@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Positive Guidance
+  frenchName: Encouragement Positif
   description: You offer more support to students who are struggling in class
+  frenchDescription: "Vous offrez plus d'aide aux \xE9tudiants qui ont de la mis\xE8re
+    avec la mati\xE8re"
   cost: 2
   engagementGain: 0.1
   comprehensionGain: 0

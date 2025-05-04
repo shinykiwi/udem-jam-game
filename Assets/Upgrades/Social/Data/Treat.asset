@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Treats
+  frenchName: Friandises
   description: Give treats to your students who show up early, ask questions, get
     good marks
+  frenchDescription: "Donnez des friandises aux \xE9tudiants qui font preuve d'un
+    bon comportement"
   cost: 2
   engagementGain: 0.2
   comprehensionGain: 0

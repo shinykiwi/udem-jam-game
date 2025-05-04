@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Memes
+  frenchName: Memes
   description: Add memes to your slides, showing that you can relate to your students
+  frenchDescription: "Ajoutez des memes \xE0 votre Powerpoint pour montrer \xE0 vos
+    \xE9tudiants que vous vous identifez \xE0 eux"
   cost: 2
   engagementGain: 0.2
   comprehensionGain: 0
