@@ -31,7 +31,7 @@ public class StudentBrain : MonoBehaviour
             StudentState oldState = state;
             state = value;
             
-            Debug.Log(studentData.studentName +"changing from " + oldState + " to " + state);
+            Debug.Log(studentData.studentName +" changing from " + oldState + " to " + state);
             
             if (oldState != state)
             {
@@ -114,6 +114,7 @@ public class StudentBrain : MonoBehaviour
         
         while (canRoll && (State != StudentState.Question))
         {
+            Debug.Log(studentData.studentName + " is rolling");
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
             switch (State)
             {
@@ -141,7 +142,7 @@ public class StudentBrain : MonoBehaviour
         if (rand <= (questionRoll))
         {
             // If it passes, change the state to learning
-            previousState = State;
+            previousState = state;
             State = StudentState.Question;
             
             return true;
