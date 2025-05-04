@@ -2789,6 +2789,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6676911000823769865, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1544483796}
+    - targetCorrespondingSourceObject: {fileID: 8846885247741541345, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083043405}
     - targetCorrespondingSourceObject: {fileID: 2297090789054802239, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083043403}
@@ -2811,7 +2814,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   english_text: Upgrade
-  french_text: "Mise \xE0 niveau"
+  french_text: "Mises \xE0 niveau"
+--- !u!1 &2083043404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8846885247741541345, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2083043405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083043404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Purchase
+  french_text: Acheter
 --- !u!1001 &2085300860
 PrefabInstance:
   m_ObjectHideFlags: 0

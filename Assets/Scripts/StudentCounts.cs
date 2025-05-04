@@ -12,9 +12,9 @@ public class StudentCounts : MonoBehaviour
     private string englishBurnout = "Burntout";
     private string englishLearning = "Learning";
     private string englishAttentive = "Attentive";
-    private string frenchBurnout = "Fatigue";
+    private string frenchBurnout = "Fatigués";
     private string frenchLearning = "Apprentissage";
-    private string frenchAttentive = "Attentive";
+    private string frenchAttentive = "Attentifs";
     
     //todo: Zaid fix this - Zaid
     private static int _learningCount = 0;
