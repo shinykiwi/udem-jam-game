@@ -18,5 +18,5 @@ MonoBehaviour:
     to
   cost: 0
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.05
   burnoutGain: 0
