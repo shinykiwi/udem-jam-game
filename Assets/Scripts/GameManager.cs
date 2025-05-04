@@ -100,11 +100,55 @@ public class GameManager : MonoBehaviour
         } 
     }
     
+    
     // Number of attentive, learning, burnout students
-    public int attentiveStudents;
-    public int learningStudents;
-    public int burnoutStudent;
+    private int attentiveStudents;
+    private int learningStudents;
+    private int burnoutStudents;
+    
+    public event Action<float> OnAttentiveStudentsChanged;
+    public event Action<float> OnLearningStudentsChanged;
+    public event Action<float> OnBurnedOutStudentsChanged;
 
+    public int AttentiveStudents
+    {
+        get => attentiveStudents;
+        set
+        {
+            if (value < 0)
+                throw new ArgumentOutOfRangeException(nameof(value), "Value must be greater than or equal to 0.");
+            attentiveStudents = value;
+            OnAttentiveStudentsChanged?.Invoke(value);
+        }
+    }
+
+    public int LearningStudents
+    {
+        get => learningStudents;
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(value), "Value must be greater than or equal to 0.");
+            }
+            learningStudents = value;
+            OnLearningStudentsChanged?.Invoke(value);
+        }
+    }
+
+    public int BurnoutStudents
+    {
+        get => burnoutStudents;
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(value), "Value must be greater than or equal to 0.");
+            }
+            burnoutStudents = value;
+            OnBurnedOutStudentsChanged?.Invoke(value);
+        }
+    }
 
     public void Update()
     {

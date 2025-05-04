@@ -33,7 +33,7 @@ public class StudentBrain : MonoBehaviour
             
             if (oldState != state)
             {
-                UpdateState();
+                UpdateState(oldState);
             }
         }
     }
@@ -56,8 +56,25 @@ public class StudentBrain : MonoBehaviour
         StartCoroutine(RollDiceContinuously());
     }
 
-    public void UpdateState()
+    public void UpdateState(StudentState oldState = StudentState.Null )
     {
+        if (oldState != State)
+        {
+            switch (oldState)
+            {
+                case StudentState.Idle:
+                    break;
+                case StudentState.Learning:
+                    GameManager.Instance.LearningStudents--;
+                    break;
+                case StudentState.Attentive:
+                    GameManager.Instance.AttentiveStudents--;
+                    break;
+                case StudentState.BurntOut:
+                    GameManager.Instance.BurnoutStudents--;
+                    break;
+            }
+        }
         switch (State)
         {
             case StudentState.Idle:
@@ -65,12 +82,15 @@ public class StudentBrain : MonoBehaviour
                 break;
             case StudentState.Learning:
                 Emote.EmoteLearning();
+                GameManager.Instance.LearningStudents++;
                 break;
             case StudentState.Attentive:
                 Emote.EmoteHappy();
+                GameManager.Instance.AttentiveStudents++;
                 break;
             case StudentState.BurntOut:
                 Emote.EmoteUnhappy();
+                GameManager.Instance.BurnoutStudents++;
                 break;
             case StudentState.Question:
                 Emote.EmoteQuestion();
@@ -109,21 +129,17 @@ public class StudentBrain : MonoBehaviour
 
     private bool RollQuestionDice()
     {
-        float questionRoll = 0.5f;
+        float questionRoll = 0.2f;
         
         float rand = Random.Range(0f, 1f);
         if (rand <= (questionRoll))
         {
             // If it passes, change the state to learning
             State = StudentState.Question;
-            //Debug.Log("Success!");
+            GameManager.Instance.FocusPoints += 1;
             return true;
         }
-        else
-        {
-            //Debug.Log("No luck!");
-            return false;
-        }
+        return false;
         
     }
     private void RollLearningDice()
@@ -144,14 +160,7 @@ public class StudentBrain : MonoBehaviour
         {
             // If it passes, change the state to learning
             State = StudentState.Learning;
-            //Debug.Log("Success!");
         }
-        else
-        {
-            //Debug.Log("No luck!");
-        }
-        
-        //Debug.Log(rand + "<= " + learningRoll);
     }
     private void RollAttentiveDice()
     {
@@ -167,14 +176,7 @@ public class StudentBrain : MonoBehaviour
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
-            //Debug.Log("Success!");
         }
-        else
-        {
-            //Debug.Log("No luck!");
-        }
-        
-        //Debug.Log(rand + "<= " + attentiveRoll);
     }
     private void RollBurntOutDice()
     {
