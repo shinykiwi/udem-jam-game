@@ -11,7 +11,12 @@ public class TabManager : MonoBehaviour
     {
         instance = this;
         firstTab = currentTab;
-        firstTab.togglePage(1);
+        
+    }
+
+    void Start()
+    {
+        resetTab();
     }
 
     public void SwitchTab(Tab tab)

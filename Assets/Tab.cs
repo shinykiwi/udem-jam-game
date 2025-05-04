@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tab : MonoBehaviour
 {
@@ -6,8 +7,20 @@ public class Tab : MonoBehaviour
     [SerializeField] private Page page;
     public string tabName;
     public string description;
-    
-    
+
+    private Button button;
+
+    public void Awake()
+    {
+        togglePage(0);
+    }
+    public void Start()
+    {
+        button = GetComponent<Button>();
+        button.onClick.AddListener(() => InfoManager.instance.displayInfo(this));
+
+        
+    }
     public void togglePage(int state = -1)
     {
         bool val;
