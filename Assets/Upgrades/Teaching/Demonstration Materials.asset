@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Demonstration Materials
   m_EditorClassIdentifier: 
   upgradeName: Demonstration Materials
-  description: Bring real world object into the classroom as examples to use during
+  description: Bring real world objects into the classroom as examples to use during
     class.
   cost: 0
   engagementGain: 0
