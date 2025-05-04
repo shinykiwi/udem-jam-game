@@ -45,7 +45,7 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         purchased = true;
         ColorBlock cb = button.colors;
         
-        cb.normalColor = upgradeItem.isGood ?Color.blue : Color.red;
+        cb.normalColor = upgradeItem.isGood ? new Color(0.3316127f, 0.3316127f, 0.8679245f) : new Color(0.6320754f,0.2243079f,0.004805992f );
         button.colors = cb;
         
         // Bounce animation
