@@ -42,7 +42,7 @@ public class Clock : MonoBehaviour
 
     private void SpeedUp()
     {
-        Time.timeScale *= 6;
+        Time.timeScale *= 10;
     }
 
     private void SpeedNormal()

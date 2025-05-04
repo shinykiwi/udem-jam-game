@@ -19,6 +19,7 @@ public class GameOverScreen : MonoBehaviour
 
     private void Start()
     {
+        canvas = gameObject.GetComponent<Canvas>();
         canvas.enabled = false;
     }
 
