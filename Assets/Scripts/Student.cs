@@ -20,7 +20,7 @@ public class Student : MonoBehaviour
         private set
         {
             emoteController = value;
-            studentBrain.Emote = emoteController;
+            Brain.Emote = emoteController;
         }
     }
     
@@ -39,7 +39,7 @@ public class Student : MonoBehaviour
         
         outline.enabled = false;
 
-        studentBrain = GetComponentInChildren<StudentBrain>();
+        Brain = GetComponentInChildren<StudentBrain>();
         Emote = gameObject.GetComponentInChildren<EmoteController>();
         
         if (!Emote)

@@ -33,9 +33,20 @@ public class PlayerRaycast : MonoBehaviour
 
             if (hitObject.GetComponent<Student>() is { } student)
             {
+
+                if (LastStudent)
+                {
+                    if (LastStudent != student)
+                    {
+                        LastStudent.HideOutline();
+                    }
+                    
+                }
+                
                 LastStudent = student;
                 LastStudent.ShowOutline();
                 cursorController.SetClickableCursor();
+                
                 if (!playedSound)
                 {
                     SoundManager.PlaySound(SoundManager.SoundType.CURSOR);
