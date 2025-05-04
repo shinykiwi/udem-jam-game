@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Group Projects
   description: Incorporate group projects into your classroom, fostering collaboration
-    and communication in the classroom.
+    and communication. Students are assigned to groups randomly.
   cost: 0
   engagementGain: 0
   comprehensionGain: 0
