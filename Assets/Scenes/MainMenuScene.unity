@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishText: 'Press any key to begin . . . '
-  frenchText: "Appuyez sur un cl\xE9 pour commencer"
+  frenchText: Appuyez sur une touche pour commencer
 --- !u!1 &450021845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3925509321298054578, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
