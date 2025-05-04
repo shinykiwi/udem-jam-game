@@ -832,6 +832,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c6d5e9ad184478948baa81b2a1b066e4, type: 2}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f0f59c216d35c842ac71c0e85ce29e3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1203,6 +1211,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5edd350d5cf455d4b98fc725d18b7038, type: 2}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5d34a0e285d3fe4dab7ad64193e26e4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1894,6 +1910,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fe943c56831b64c4eb45874195676302, type: 2}
+    - target: {fileID: 4661660435968294385, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e4b000de6948094094f14fd7c0caffa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1912,6 +1936,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7559802925540232616}
     m_Modifications:
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ffdfb7542b143854c95de2a76670842b, type: 2}
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e4b000de6948094094f14fd7c0caffa, type: 2}
     - target: {fileID: 8440580920415052340, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
       propertyPath: m_Name
       value: MaleStudent
@@ -2499,6 +2531,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7794611895735397414}
     m_Modifications:
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fe943c56831b64c4eb45874195676302, type: 2}
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 09e8b1921fc003243afc1da4906c01c2, type: 2}
     - target: {fileID: 8440580920415052340, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
       propertyPath: m_Name
       value: MaleStudent
@@ -2697,6 +2737,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2245394071864951389}
     m_Modifications:
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c6d5e9ad184478948baa81b2a1b066e4, type: 2}
+    - target: {fileID: 1784980127875020599, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5d34a0e285d3fe4dab7ad64193e26e4, type: 2}
     - target: {fileID: 8440580920415052340, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
       propertyPath: m_Name
       value: MaleStudent
