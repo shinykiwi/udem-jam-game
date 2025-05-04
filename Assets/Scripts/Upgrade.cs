@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -11,8 +12,7 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] Upgrade[] lockedUpgrades;
     
     
-    private static Vector3 originalScale;
-    public static float scaleFactor = 1.1f;
+    public static float scaleFactor = 1.2f;
     public static float duration = 0.2f;
 
     void Awake()
@@ -35,15 +35,38 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         foreach (Upgrade upgrade in lockedUpgrades)
         {
             upgrade.gameObject.SetActive(true);
+            upgrade.spawn();
         }
     }
 
+    bool hovering = false;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOScale(originalScale * scaleFactor, duration).SetEase(Ease.OutBack);    }
+        transform.DOScale(Vector3.one * scaleFactor, duration).SetEase(Ease.OutBack);   
+        hovering = true;
+    }
+    
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        throw new NotImplementedException();
+        transform.DOScale(Vector3.one, duration).SetEase(Ease.InOutSine);
+        hovering = false;
+        transform.eulerAngles = new Vector3(0, 0, 0);
     }
+    
+    void Update()
+    {
+        if (hovering)
+            transform.localEulerAngles = new Vector3(Mathf.Sin(Time.time), Mathf.Cos(Time.time), 0)*30;
+
+    }
+
+    void spawn()
+    {
+        RectTransform rect = GetComponent<RectTransform>();
+        rect.localScale = Vector3.zero;
+        rect.DOScale(1.15f, 0.25f).SetEase(Ease.OutQuad)
+            .OnComplete(() => {
+                rect.DOScale(1f, 0.15f).SetEase(Ease.InOutQuad);
+            });    }
 }
