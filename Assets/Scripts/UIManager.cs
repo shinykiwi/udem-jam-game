@@ -30,27 +30,4 @@ public class UIManager : MonoBehaviour
         upgradeButton.gameObject.SetActive(true);
         SoundManager.PlaySound(SoundManager.SoundType.POPUPCLOSE);
     }
-
-    public void selectSocial()
-    {
-        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
-    }
-
-    public void selectTeaching()
-    {
-        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
-    }
-
-    public void selectAbilities()
-    {
-        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
-    }
-
-    public void selectClassroom()
-    {
-        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
-    }
-
-
-
 }

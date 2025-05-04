@@ -51,8 +51,11 @@ public class GameManager : MonoBehaviour
             Engagement += upgradeItem.engagementGain;
             Comprehension += upgradeItem.comprehensionGain;
             Burnout += upgradeItem.burnoutGain;
+            SoundManager.PlaySound(SoundManager.SoundType.PURCHASE);
             upgrade.onPurchase();
             
+        } else {
+            SoundManager.PlaySound(SoundManager.SoundType.ERROR);
         }
     }
     public int FocusPoints
