@@ -21,13 +21,14 @@ public class Player : MonoBehaviour
         
         
         EmoteController emote = playerRaycast.LastStudent.Emote;
-
         StudentBrain studentBrain = playerRaycast.LastStudent.Brain;
-        
-        
-        emote.StopEmoting();
 
+        // If it's a question, then clear the question and continue
+        if (studentBrain.State == StudentBrain.StudentState.Question)
+        {
+            emote.StopEmoting();
+            studentBrain.State = StudentBrain.StudentState.Null;
+        }
         
-
     }
 }
