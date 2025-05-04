@@ -13,6 +13,7 @@ public class StudentBrain : MonoBehaviour
         Attentive,
         BurntOut,
         Question,
+        Null,
     }
 
     private bool canRoll = true;
@@ -25,7 +26,7 @@ public class StudentBrain : MonoBehaviour
     {
         get { return state; }
         
-        private set
+        set
         {
             StudentState oldState = state;
             state = value;
@@ -57,7 +58,7 @@ public class StudentBrain : MonoBehaviour
         StartCoroutine(RollDiceContinuously());
     }
 
-    private void UpdateState()
+    public void UpdateState()
     {
         switch (State)
         {
@@ -76,10 +77,12 @@ public class StudentBrain : MonoBehaviour
             case StudentState.Question:
                 Emote.EmoteQuestion();
                 break;
-            default:
-                throw new NotImplementedException();
+            case StudentState.Null:
+                StartCoroutine(RollDiceContinuously());
+                break;
         }
     }
+    
 
     private void Update()
     {
@@ -91,7 +94,9 @@ public class StudentBrain : MonoBehaviour
 
     IEnumerator RollDiceContinuously()
     {
-        while (canRoll)
+        Debug.Log("Dice rolling started.");
+        
+        while (canRoll && (State != StudentState.Question))
         {
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
             
@@ -100,10 +105,36 @@ public class StudentBrain : MonoBehaviour
             RollBurntOutDice();
             
         }
+        
+        Debug.Log("Dice rolling stopped.");
     }
 
+    private bool RollQuestionDice()
+    {
+        float questionRoll = 0.5f;
+        
+        float rand = Random.Range(0f, 1f);
+        if (rand <= (questionRoll))
+        {
+            // If it passes, change the state to learning
+            State = StudentState.Question;
+            //Debug.Log("Success!");
+            return true;
+        }
+        else
+        {
+            //Debug.Log("No luck!");
+            return false;
+        }
+        
+    }
     private void RollLearningDice()
     {
+        if (RollQuestionDice())
+        {
+            return;
+        }
+        
         // ex. 0.2 * 0.9 = 0.18
         float learningRoll = studentData.learningTendency * GameManager.Instance.Comprehension;
 
@@ -115,16 +146,15 @@ public class StudentBrain : MonoBehaviour
         {
             // If it passes, change the state to learning
             State = StudentState.Learning;
-            Debug.Log("Success!");
+            //Debug.Log("Success!");
         }
         else
         {
-            Debug.Log("No luck!");
+            //Debug.Log("No luck!");
         }
         
         //Debug.Log(rand + "<= " + learningRoll);
     }
-
     private void RollAttentiveDice()
     {
         float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.Engagement;
@@ -139,16 +169,15 @@ public class StudentBrain : MonoBehaviour
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
-            Debug.Log("Success!");
+            //Debug.Log("Success!");
         }
         else
         {
-            Debug.Log("No luck!");
+            //Debug.Log("No luck!");
         }
         
         //Debug.Log(rand + "<= " + attentiveRoll);
     }
-
     private void RollBurntOutDice()
     {
         float burnoutRoll = studentData.burnoutTendency * GameManager.Instance.Burnout;
@@ -157,11 +186,11 @@ public class StudentBrain : MonoBehaviour
         if (rand <= burnoutRoll)
         {
             State = StudentState.BurntOut;
-            Debug.Log("Success!");
+            //Debug.Log("Success!");
         }
         else
         {
-            Debug.Log("No luck!");
+            //Debug.Log("No luck!");
         }
         
         //Debug.Log(rand + "<= " + burnoutRoll);
