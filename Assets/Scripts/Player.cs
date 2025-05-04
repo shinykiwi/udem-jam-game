@@ -1,9 +1,12 @@
 using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     private PlayerRaycast playerRaycast;
+
+    [SerializeField] private CinemachineCamera mainCamera;
 
     private void Start()
     {
@@ -35,5 +38,6 @@ public class Player : MonoBehaviour
     public void OnMenu()
     {
         playerRaycast.enabled = !playerRaycast.enabled;
+        mainCamera.enabled = !mainCamera.enabled;
     }
 }
