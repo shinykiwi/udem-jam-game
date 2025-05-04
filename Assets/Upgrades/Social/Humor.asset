@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Humor
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   upgradeName: Humor
-  upgradeDescription: 
-  cost: 0
+  description: You make more jokes in class, often about the topics you're teaching
+    making the class more relatable and fun
+  cost: 2
   engagementGain: 0
   comprehensionGain: 0
   burnoutGain: 0

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: LearningApps
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
   upgradeName: Educational Apps
-  upgradeDescription: 
+  description: Employ students to download apps that could be helpful for studying
   cost: 0
   engagementGain: 0
   comprehensionGain: 0
