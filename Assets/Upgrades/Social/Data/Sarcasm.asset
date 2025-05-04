@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
+  m_Name: Sarcasm
+  m_EditorClassIdentifier: 
+  isGood: 0
+  upgradeName: Sarcasm
+  description: You're witty, sharp but also a bit too cutting. Your scarcasm gets
+    laughs from few but confuses others and alienates many
+  cost: 2
+  engagementGain: -0.2
+  comprehensionGain: 0
+  burnoutGain: 0.2
