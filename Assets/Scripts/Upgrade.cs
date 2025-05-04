@@ -63,7 +63,8 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.DOScale(Vector3.one * scaleFactor, duration).SetEase(Ease.OutBack);   
+        transform.DOScale(Vector3.one * scaleFactor, duration).SetEase(Ease.OutBack);
+        SoundManager.PlaySound(SoundManager.SoundType.CURSOR);
         hovering = true;
     }
 

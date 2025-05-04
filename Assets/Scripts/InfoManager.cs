@@ -51,7 +51,7 @@ public class InfoManager : MonoBehaviour
         purchaseButton.gameObject.SetActive(true);
         costText.gameObject.SetActive(true);
         purchaseButton.interactable = !upgrade.purchased;
-
+        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
 
 
     }

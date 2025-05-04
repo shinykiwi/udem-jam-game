@@ -28,7 +28,7 @@ public class TabManager : MonoBehaviour
         }
         currentTab = tab;
         currentTab.togglePage();
-        
+        SoundManager.PlaySound(SoundManager.SoundType.SELECT);
     }
 
     public void resetTab()
