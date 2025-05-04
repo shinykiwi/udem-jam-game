@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Demonstration Materials
   m_EditorClassIdentifier: 
+  isGood: 1
   upgradeName: Demonstration Materials
   description: Bring real world objects into the classroom as examples to use during
     class.

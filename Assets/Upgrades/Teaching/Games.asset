@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Games
   m_EditorClassIdentifier: 
+  isGood: 1
   upgradeName: Games
   description: Incorporate games into your teaching methods.
   cost: 0

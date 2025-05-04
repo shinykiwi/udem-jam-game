@@ -99,7 +99,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.5424528, g: 0.5424528, b: 0.5424528, a: 1}
+    m_NormalColor: {r: 0.23745094, g: 0.7751638, b: 0.8679245, a: 1}
     m_HighlightedColor: {r: 0.9254902, g: 1, b: 0.5294118, a: 1}
     m_PressedColor: {r: 0.9273802, g: 1, b: 0.5283019, a: 1}
     m_SelectedColor: {r: 0.99574804, g: 1, b: 0, a: 1}
@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeItem: {fileID: 11400000, guid: 218ec90b2c1c0cb48bb6a3e2d0c5feda, type: 2}
+  lockedUpgrades: []
 --- !u!1 &4748531922194993307
 GameObject:
   m_ObjectHideFlags: 0

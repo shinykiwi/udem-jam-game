@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: BalancedGroups
   m_EditorClassIdentifier: 
+  isGood: 0
   upgradeName: Balanced Groups
-  description: Place students into groups where each group has an equal amount of
-    students with high grades.
+  description: Place students with high performance and low performance on the same
+    group, this could lead to issues where some people are doing more work than others
   cost: 0
   engagementGain: 0
   comprehensionGain: 0

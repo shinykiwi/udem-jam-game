@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Reiterate
   m_EditorClassIdentifier: 
-  upgradeName: Reiterate Complicated Topics
-  description: Spend more time on topics that students have trouble understanding.
+  isGood: 1
+  upgradeName: Using Examples
+  description: Use examples that the students may be able to understand and relate
+    to
   cost: 0
   engagementGain: 0
   comprehensionGain: 0

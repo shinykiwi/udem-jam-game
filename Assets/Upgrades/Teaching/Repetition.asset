@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Repetition
   m_EditorClassIdentifier: 
+  isGood: 0
   upgradeName: Repetition
   description: Repeat the material to the students more times to make them remember
     it.

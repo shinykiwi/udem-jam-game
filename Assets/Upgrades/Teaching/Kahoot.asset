@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Kahoot
   m_EditorClassIdentifier: 
+  isGood: 1
   upgradeName: Kahoot Quizzes
   description: Hold Kahoot quizzes in class to foster engagement and test your students'
     academic progress.

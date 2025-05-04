@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,12 +9,14 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     
     [SerializeField] UpgradeItem upgradeItem;
-    Button button;
     [SerializeField] Upgrade[] lockedUpgrades;
-    
+    Button button;
+
+    public bool purchased = false;
     
     public static float scaleFactor = 1.2f;
     public static float duration = 0.2f;
+    bool hovering = false;
 
     void Awake()
     {
@@ -32,6 +35,25 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void onPurchase()
     {
+        purchased = true;
+        StartCoroutine(OnPurchaseRoutine());
+    }
+    
+    private IEnumerator OnPurchaseRoutine()
+    {
+        //Change button color
+        purchased = true;
+        ColorBlock cb = button.colors;
+        
+        cb.normalColor = upgradeItem.isGood ?Color.blue : Color.red;
+        button.colors = cb;
+        
+        // Bounce animation
+        transform.DOKill(); // Prevent overlap
+        yield return transform.DOScale(1.15f, 0.15f).SetEase(Ease.OutQuad).WaitForCompletion();
+        yield return transform.DOScale(1f, 0.1f).SetEase(Ease.InQuad).WaitForCompletion();
+
+        // Now spawn the locked upgrades
         foreach (Upgrade upgrade in lockedUpgrades)
         {
             upgrade.gameObject.SetActive(true);
@@ -39,13 +61,11 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
-    bool hovering = false;
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.DOScale(Vector3.one * scaleFactor, duration).SetEase(Ease.OutBack);   
         hovering = true;
     }
-    
 
     public void OnPointerExit(PointerEventData eventData)
     {
@@ -58,7 +78,10 @@ public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if (hovering)
             transform.localEulerAngles = new Vector3(Mathf.Sin(Time.time), Mathf.Cos(Time.time), 0)*30;
-
+        else
+        {
+            transform.localEulerAngles = new Vector3(Mathf.Sin(Time.time), Mathf.Cos(Time.time), 0)*10;
+        }
     }
 
     void spawn()

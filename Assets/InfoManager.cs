@@ -28,6 +28,7 @@ public class InfoManager : MonoBehaviour
 
     }
 
+
     public void displayUpgrade(Upgrade upgrade)
     {
         UpgradeItem upgradeItem = upgrade.getUpgradeItem();
@@ -39,9 +40,13 @@ public class InfoManager : MonoBehaviour
         purchaseButton.onClick.AddListener(() =>
         {
             OnUpgradePurchased?.Invoke(upgrade);
+            purchaseButton.interactable = !upgrade.purchased;
         });
         purchaseButton.gameObject.SetActive(true);
         costText.gameObject.SetActive(true);
-        
+        purchaseButton.interactable = !upgrade.purchased;
+
+
+
     }
 }

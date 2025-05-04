@@ -9,6 +9,8 @@ public class UpgradeItem : ScriptableObject
         Teaching,
         Ability
     }
+
+    public bool isGood;
     public string upgradeName;
     public string description;
     public int cost;

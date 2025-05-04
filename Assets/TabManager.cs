@@ -16,7 +16,7 @@ public class TabManager : MonoBehaviour
 
     void Start()
     {
-        resetTab();
+        firstTab.togglePage(1);
     }
 
     public void SwitchTab(Tab tab)

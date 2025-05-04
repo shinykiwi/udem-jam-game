@@ -17,7 +17,7 @@ public class Tab : MonoBehaviour
     public void Start()
     {
         button = GetComponent<Button>();
-        button.onClick.AddListener(() => InfoManager.instance.displayInfo(this));
+        //button.onClick.AddListener(() => InfoManager.instance.displayInfo(this));
 
         
     }
@@ -36,7 +36,9 @@ public class Tab : MonoBehaviour
                 val = !page.gameObject.activeSelf;
                 break;
         }
-        
+
+        if (val)
+            InfoManager.instance.displayInfo(this);
         page.gameObject.SetActive(val);
     }
 }

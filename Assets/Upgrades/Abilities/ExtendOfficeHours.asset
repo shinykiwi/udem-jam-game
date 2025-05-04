@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: ExtendOfficeHours
   m_EditorClassIdentifier: 
+  isGood: 1
   upgradeName: Extend Office Hours
   description: A lot of students are showing up to your office for questions, extend
     your office hours so more students can come
