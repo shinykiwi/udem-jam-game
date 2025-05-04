@@ -2,14 +2,17 @@ using System;
 using System.Collections;
 using System.Numerics;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Quaternion = UnityEngine.Quaternion;
 using Vector3 = UnityEngine.Vector3;
 
 public class EmoteController : MonoBehaviour
 {
     [Header("Setup")]
     [SerializeField] private Image image;
+    [SerializeField] private TextMeshProUGUI text;
 
     [Header("Emotes")] 
     [SerializeField] private Sprite learning;
@@ -44,6 +47,23 @@ public class EmoteController : MonoBehaviour
     {
         // Should not be emoting to begin with
         IsEmoting = false;
+        text.enabled = false;
+    }
+
+    private void TextAnimation(string s)
+    {
+        text.text = s;
+        float duration = 3f;
+        text.enabled = true;
+        text.transform.DOMoveY(text.transform.position.y - 1f, duration);
+        Tween tween = text.DOFade(0f, duration);
+        tween.OnComplete(ResetText);
+    }
+
+    private void ResetText()
+    {
+        text.enabled = false;
+        text.color = Color.white;
     }
 
     private void EmoteOnce(Sprite sprite)
@@ -61,16 +81,19 @@ public class EmoteController : MonoBehaviour
     public void EmoteLearning()
     {
         EmoteOnce(learning);
+        TextAnimation("+1 Learning");
     }
 
     public void EmoteUnhappy()
     {
         EmoteOnce(unhappy);
+        TextAnimation("+1 Burnt Out");
     }
 
     public void EmoteHappy()
     {
         EmoteOnce(happy);
+        TextAnimation("+1 Engaged");
     }
 
     public void EmoteLaughing()
@@ -81,6 +104,7 @@ public class EmoteController : MonoBehaviour
     public void EmoteBored()
     {
         EmoteOnce(bored);
+        TextAnimation("+1 Focus");
     }
 
     public void EmoteQuestion()
