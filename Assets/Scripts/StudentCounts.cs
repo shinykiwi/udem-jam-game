@@ -9,6 +9,9 @@ public class StudentCounts : MonoBehaviour
     [SerializeField] private TextMeshProUGUI attentiveStudents;
 
 
+    
+    
+    
     //todo: Zaid fix this - Zaid
     private static int _learningCount = 0;
     private static int _attentiveCount = 0;
@@ -64,6 +67,7 @@ public class StudentCounts : MonoBehaviour
 
     private void SetLearning()
     {
+        
         learningStudents.text = _learningCount + " Learning";
     }
 

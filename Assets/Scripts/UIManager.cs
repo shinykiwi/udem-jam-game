@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button upgradeButton;
     [SerializeField] GameObject upgradePanel;
     
+    [SerializeField] FocusPoints focusPoints;
+    
     public static UIManager instance;
 
     public void Awake()
@@ -23,6 +25,7 @@ public class UIManager : MonoBehaviour
         TabManager.instance.resetTab();
         SoundManager.PlaySound(SoundManager.SoundType.POPUPOPEN);
         StudentBrain.isPaused = true;
+        focusPoints.SetFocusPoints(GameManager.Instance.FocusPoints);
         
     }
 
