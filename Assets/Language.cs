@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Language : MonoBehaviour
 {
-    public static bool isEnglish = true;
+    public static bool isEnglish = false;
 
     
     public static Language instance;

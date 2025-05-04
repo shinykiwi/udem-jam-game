@@ -119,6 +119,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8817450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 473754500475805006, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8817454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8817450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Engagement
+  french_text: Engagement
 --- !u!1 &79369910
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +493,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &279414033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5900492896523991777, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &279414037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279414033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Burnout
+  french_text: Fatigue
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1057,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &630845344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1983589287717542652, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &630845348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630845344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: 'Attentive students: actively engaging in class'
+  french_text: "\xC9tudiants attentifs: font attention au cours"
 --- !u!1 &663118517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,6 +1688,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1394208396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 992203970093299011, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1394208400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394208396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: 'IDLE students: not paying attention to the class'
+  french_text: "\xC9tudiants INACTIFS: ne font pas attention au cours"
+--- !u!1 &1490354910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3892869139957437502, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1490354914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490354910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Comprehension
+  french_text: "Compr\xE9hension"
 --- !u!4 &1502485568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108854654262261902, guid: 50410ff0d0cc34e44ab2533f737dfd43, type: 3}
@@ -1711,6 +1806,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 32.6, y: -45.1, z: 0}
+--- !u!1 &1544483792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6676911000823769865, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1544483796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544483792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: 'Burntout: Can''t pay attention at all, overwhelmed by stress and
+    anxiety'
+  french_text: "Fatigu\xE9: Ne peut pas porter attention au cours du tout \xE0 cause
+    du stress"
 --- !u!1001 &1683748076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1904,6 +2020,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3150440599741518664, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
   m_PrefabInstance: {fileID: 1766222751}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1777692842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2402910617169321655, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1777692846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777692842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: 'Learning Students: Having an easy time learning and understanding
+    what''s happening in class'
+  french_text: "\xC9tudiants en Apprentissage: Comprennent facilement ce qui se d\xE9roule
+    en cours"
 --- !u!1001 &1797028400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2236,6 +2373,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3609726931199464451, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_text
+      value: 'Concentration: 0'
+      objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -2392,6 +2533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6228476841664355096, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6782852909036747808, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2416,6 +2561,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7672747942921277736, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7978370778424176719, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2435,6 +2584,10 @@ PrefabInstance:
     - target: {fileID: 7978370778424176719, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989860000950472290, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8089738152294564254, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2468,6 +2621,27 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 473754500475805006, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8817454}
+    - targetCorrespondingSourceObject: {fileID: 3892869139957437502, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1490354914}
+    - targetCorrespondingSourceObject: {fileID: 5900492896523991777, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 279414037}
+    - targetCorrespondingSourceObject: {fileID: 992203970093299011, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1394208400}
+    - targetCorrespondingSourceObject: {fileID: 1983589287717542652, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 630845348}
+    - targetCorrespondingSourceObject: {fileID: 2402910617169321655, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777692846}
+    - targetCorrespondingSourceObject: {fileID: 6676911000823769865, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1544483796}
     - targetCorrespondingSourceObject: {fileID: 2297090789054802239, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2083043403}
