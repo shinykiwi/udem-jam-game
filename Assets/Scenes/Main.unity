@@ -1200,6 +1200,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 2118822761}
+--- !u!1 &815048922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7796121523029089642, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &815048926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815048922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Return to Class
+  french_text: Retour en Classe
 --- !u!1001 &864093251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1343,6 +1362,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5606005c493221468e0053788ce6a85, type: 3}
+--- !u!1 &911388082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3791297357130715258, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &911388086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911388082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Abilities
+  french_text: Pouvoirs
 --- !u!1 &1072288793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1881,25 @@ MonoBehaviour:
     anxiety'
   french_text: "Fatigu\xE9: Ne peut pas porter attention au cours du tout \xE0 cause
     du stress"
+--- !u!1 &1653642795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8836934481345076738, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1653642799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653642795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Classroom
+  french_text: Classe
 --- !u!1001 &1683748076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2229,6 +2286,25 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 5, y: 5}
   m_UseGraphicAlpha: 1
+--- !u!1 &1888301315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1529139757519326493, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1888301319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888301315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Teaching
+  french_text: Enseignement
 --- !u!1 &2053117250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,6 +2429,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 672436710846272355, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchName
+      value: Enseignement
+      objectReference: {fileID: 0}
+    - target: {fileID: 672436710846272355, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchDescription
+      value: "Les comp\xE9tences d'enseignement aident avec la compr\xE9hension et
+        l'apprentissage des \xE9tudiants"
+      objectReference: {fileID: 0}
     - target: {fileID: 755740056729619098, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2379,59 +2464,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 64.53333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -32.266666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2949842979694459222, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3609726931199464451, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_text
-      value: 'Concentration: 0'
+      value: 'Focus: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 64.53333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161.33333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4455442148249816074, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2495,27 +2580,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 64.53333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -96.8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603397437733927903, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchName
+      value: Social
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603397437733927903, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchDescription
+      value: "Les comp\xE9tences sociales aident les \xE9tudiants \xE0 \xE9couter
+        en classe "
       objectReference: {fileID: 0}
     - target: {fileID: 5894505040030235287, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2589,9 +2683,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7267244447293163285, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchName
+      value: Pouvoirs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267244447293163285, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: frenchDescription
+      value: "Les pouvoirs qui peuvent augmenter le progr\xE8s de la classe et r\xE9duire
+        la fatigue"
+      objectReference: {fileID: 0}
     - target: {fileID: 7272606060447428561, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7672747942921277736, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_IsActive
@@ -2653,6 +2756,18 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8836934481345076738, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1653642799}
+    - targetCorrespondingSourceObject: {fileID: 1529139757519326493, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1888301319}
+    - targetCorrespondingSourceObject: {fileID: 3791297357130715258, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 911388086}
+    - targetCorrespondingSourceObject: {fileID: 7796121523029089642, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 815048926}
     - targetCorrespondingSourceObject: {fileID: 473754500475805006, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8817454}
