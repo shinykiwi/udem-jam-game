@@ -17,6 +17,6 @@ MonoBehaviour:
   description: Place students with high performance and low performance on the same
     group, this could lead to issues where some people are doing more work than others
   cost: 2
-  engagementGain: 0
+  engagementGain: 0.2
   comprehensionGain: -0.2
   burnoutGain: 0.1

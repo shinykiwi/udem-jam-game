@@ -17,6 +17,6 @@ MonoBehaviour:
   description: Host a kahoot where students who place at the top of the leaderboard
     can earn bonus marks in class.
   cost: 2
-  engagementGain: 0
+  engagementGain: 0.05
   comprehensionGain: 0.3
   burnoutGain: 0.2

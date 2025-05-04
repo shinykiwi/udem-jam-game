@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: NoPhones
   m_EditorClassIdentifier: 
+  isGood: 0
   upgradeName: No Phones Allowed
   description: A strict no phone policy is enforced in class so no one is allowed
     to use their phone while you are teaching
   cost: 2
-  engagementGain: 0
+  engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0.1
