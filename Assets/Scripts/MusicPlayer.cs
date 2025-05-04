@@ -6,11 +6,20 @@ public class MusicPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
     public AudioClip[] songs;
+    public static MusicPlayer Instance { get; private set; }
     public float volume;
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

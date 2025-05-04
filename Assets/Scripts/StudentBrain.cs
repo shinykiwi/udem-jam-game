@@ -119,14 +119,20 @@ public class StudentBrain : MonoBehaviour
         while (canRoll)
         {
             
+            
+
             while (isPaused)
             {
                 yield return null;
             }
-
+            
             //Debug.Log(studentData.studentName + " is rolling");
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
             
+            while (isPaused)
+            {
+                yield return null;
+            }
             //Just dont roll if still asking
             if (State == StudentState.Question)  continue;
 
@@ -167,6 +173,7 @@ public class StudentBrain : MonoBehaviour
         float rand = Random.Range(0f, 1f);
         if (rand <= (questionRoll))
         {
+            
             // If it passes, change the state to learning
             previousState = state;
             State = StudentState.Question;
