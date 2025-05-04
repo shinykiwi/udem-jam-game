@@ -14,9 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Group By Performance
+  frenchName: Groupez par performance
   description: Group teams based on performance, high performing students are placed
     in one team, low performing are place in another. This helps manage teams more
     easily
+  frenchDescription: "Les \xE9quipes sont regroup\xE9es en fonction de leurs performances\_:
+    les \xE9l\xE8ves les plus performants sont plac\xE9s dans une \xE9quipe, les
+    moins performants dans une autre. Cela facilite la gestion des \xE9quipes."
   cost: 2
   engagementGain: 0
   comprehensionGain: 0.2

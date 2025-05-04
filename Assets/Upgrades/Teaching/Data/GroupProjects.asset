@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Group Projects
+  frenchName: "Projets en \xE9quipes"
   description: Incorporate group projects into your classroom, fostering collaboration
     and communication. Students are assigned to groups randomly.
+  frenchDescription: "Int\xE9grez des projets de groupe \xE0 votre classe pour encourager
+    la collaboration et la communication. Les \xE9l\xE8ves sont r\xE9partis dans
+    des groupes al\xE9atoires."
   cost: 1
   engagementGain: 0
   comprehensionGain: 0.1

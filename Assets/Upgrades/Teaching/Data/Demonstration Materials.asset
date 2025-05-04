@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Demonstration Materials
+  frenchName: "Mat\xE9riaux pedagogiques"
   description: Bring real world objects into the classroom as examples to use during
     class.
+  frenchDescription: "Apportez des objets du monde r\xE9el dans la salle de classe
+    comme exemples \xE0 utiliser pendant le cours."
   cost: 2
   engagementGain: 0.05
   comprehensionGain: 0.2

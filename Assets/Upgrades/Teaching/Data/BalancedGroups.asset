@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Balanced Groups
+  frenchName: "Groupes \xE9quilibr\xE9s"
   description: Place students with high performance and low performance on the same
     group, this could lead to issues where some people are doing more work than others
+  frenchDescription: "Placez les \xE9l\xE8ves avec de bonnes performances et ceux
+    qui on de faibles performances dans le m\xEAme groupe, cela pourrait entra\xEEner
+    des probl\xE8mes o\xF9 certaines personnes font plus de travail que d'autres."
   cost: 2
   engagementGain: 0.2
   comprehensionGain: -0.2

@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Visual Aid
+  frenchName: Aide visuelle
   description: Add a visual aid to your class, making teaching for yourself easier
     and making learning for the students more enjoyable.
+  frenchDescription: "Ajoutez une aide visuelle \xE0 votre cours, ce qui facilite
+    votre enseignement et rend l\u2019apprentissage des \xE9l\xE8ves plus agr\xE9able."
   cost: 1
   engagementGain: 0
   comprehensionGain: 0.1
