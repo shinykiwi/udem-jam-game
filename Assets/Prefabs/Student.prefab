@@ -774,8 +774,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2943427445369757772}
   learning: {fileID: 21300000, guid: 98ed81e4c26fb42aa9dd9156f4d64479, type: 3}
-  unhappy: {fileID: 21300000, guid: 5da39e36a98c74eefbcf48aa9bb74901, type: 3}
-  happy: {fileID: 21300000, guid: 63261ea34d98a41f5b9474dfe033aa09, type: 3}
+  unhappy: {fileID: 21300000, guid: 7562f1c80a6264a6e9ce190c46102b3e, type: 3}
+  happy: {fileID: 21300000, guid: 6d18ec9523298462d8df1bb85e69fb09, type: 3}
   laughing: {fileID: 21300000, guid: 047a3fd2217224d03a6479e5aea800cd, type: 3}
   bored: {fileID: 21300000, guid: 4e2c2866075d2404fa00fa96c4da956e, type: 3}
   question: {fileID: 21300000, guid: c8eab46e569b741edaef0835107f6ed0, type: 3}

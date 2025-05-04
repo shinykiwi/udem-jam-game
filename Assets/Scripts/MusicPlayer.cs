@@ -26,7 +26,7 @@ public class MusicPlayer : MonoBehaviour
     void Update()
     {
         audioSource.volume= volume;
-        if (!audioSource.isPlaying)
+        if (!audioSource.isPlaying && audioSource.time == 0)
         {
             ChangeSong(Random.Range(0, songs.Length));
         }
