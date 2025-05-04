@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Repetition
+  frenchName: "R\xE9p\xE9tition"
   description: Repeat the material to the students more times to make them remember
     it.
+  frenchDescription: "R\xE9p\xE9tez le contenu aux \xE9l\xE8ves plusieurs fois pour
+    qu\u2019ils s\u2019en souviennent."
   cost: 1
   engagementGain: 0
   comprehensionGain: -0.2

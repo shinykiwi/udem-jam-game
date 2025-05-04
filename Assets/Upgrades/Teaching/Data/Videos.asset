@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Videos
+  frenchName: "Vid\xE9os"
   description: Use videos as a visual aid in class to boost engagement and provide
     thoughtful examples.
+  frenchDescription: "Utilisez des vid\xE9os comme aide visuelle en classe pour stimuler
+    l\u2019engagement et fournir des exemples bien r\xE9fl\xE9chis."
   cost: 1
   engagementGain: 0.05
   comprehensionGain: 0.1

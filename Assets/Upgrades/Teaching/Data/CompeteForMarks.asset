@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Compete For Marks
-  description: Host a kahoot where students who place at the top of the leaderboard
+  frenchName: Rivalisez pour les notes
+  description: Host a Kahoot where students who place at the top of the leaderboard
     can earn bonus marks in class.
+  frenchDescription: "Organisez un Kahoot o\xF9 les \xE9l\xE8ves qui se classent
+    on top peuvent gagner des points bonis."
   cost: 2
   engagementGain: 0.05
   comprehensionGain: 0.3

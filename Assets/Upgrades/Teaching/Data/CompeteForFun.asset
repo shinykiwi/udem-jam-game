@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Compete For Fun
+  frenchName: Rivalisez pour le plaisir
   description: Host a Kahoot in class for no reward, just for the enjoyment and engagement
     of your students.
+  frenchDescription: "Organisez un Kahoot en classe sans r\xE9compense, seulement
+    pour le plaisir et l'engagement de vos \xE9l\xE8ves."
   cost: 2
   engagementGain: 0
   comprehensionGain: 0.2

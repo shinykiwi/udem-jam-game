@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Study Guides
+  frenchName: "Guide d'\xE9tude"
   description: Give your students a study guide to help them prepare for examinations.
+  frenchDescription: "Donnez \xE0 vos \xE9l\xE8ves un guide d\u2019\xE9tude pour
+    les aider \xE0 se pr\xE9parer aux examens."
   cost: 1
   engagementGain: 0
   comprehensionGain: 0.2
