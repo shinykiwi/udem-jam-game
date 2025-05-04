@@ -10,35 +10,61 @@ public class StudentCounts : MonoBehaviour
 
 
     //todo: Zaid fix this - Zaid
+    private static int _learningCount = 0;
+    private static int _attentiveCount = 0;
+    private static int _burnoutCount = 0;
+
     
-    private void OnEnable()
+    public static int BurnoutCount
     {
-        GameManager.Instance.OnBurnedOutStudentsChanged += SetBurnout;
-        GameManager.Instance.OnAttentiveStudentsChanged += SetAttentive;
-        GameManager.Instance.OnLearningStudentsChanged += SetLearning;
+        get => _burnoutCount;
+        set
+        {
+            _burnoutCount = value;
+            instance.SetBurnout();
+        }
     }
-
-    private void OnDisable()
+    public static int AttentiveCount
     {
-        GameManager.Instance.OnBurnedOutStudentsChanged -= SetBurnout;
-        GameManager.Instance.OnAttentiveStudentsChanged -= SetAttentive;
-        GameManager.Instance.OnLearningStudentsChanged -= SetLearning;
+        get => _attentiveCount;
+        set
+        {
+            _attentiveCount = value;
+            instance.SetAttentive();
+        }
+    }
+    public static int LearningCount
+    {
+        get => _learningCount;
+        set
+        {
+            _learningCount = value;
+            instance.SetLearning();
+        }
+    }
+    
+    
+    public static StudentCounts instance;
+
+    private void Awake()
+    {
+        instance = this;
     }
     
 
-    private void SetBurnout(float value)
+    private void SetBurnout()
     {
-        burnoutStudents.text = value + " Burned out";
+        burnoutStudents.text = _burnoutCount + " Burnt out";
     }
 
-    private void SetAttentive(float value)
+    private void SetAttentive()
     {
-        attentiveStudents.text = value + " Paying attention";
+        attentiveStudents.text = _attentiveCount + " Paying attention";
     }
 
-    private void SetLearning(float value)
+    private void SetLearning()
     {
-        learningStudents.text = value + " Learning";
+        learningStudents.text = _learningCount + " Learning";
     }
 
 

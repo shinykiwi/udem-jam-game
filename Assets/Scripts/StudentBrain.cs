@@ -183,7 +183,11 @@ public class StudentBrain : MonoBehaviour
         if (rand <= (learningRoll))
         {
             // If it passes, change the state to learning
+            StudentCounts.AttentiveCount--;
             State = StudentState.Learning;
+            StudentCounts.LearningCount++;
+            
+            
             return true;
         }
         return  false;
@@ -204,6 +208,7 @@ public class StudentBrain : MonoBehaviour
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
+            StudentCounts.AttentiveCount++;
             return true;
         }
         return false;
@@ -215,7 +220,18 @@ public class StudentBrain : MonoBehaviour
         float rand = Random.Range(0f, 1f);
         if (rand <= burnoutRoll)
         {
+            if (State == StudentState.Attentive)
+            {
+                StudentCounts.AttentiveCount--;
+            }
+
+            if (State == StudentState.Learning)
+            {
+                StudentCounts.LearningCount--;
+            }
+            
             State = StudentState.BurntOut;
+            StudentCounts.BurnoutCount++;
             //Debug.Log("Success!");
         }
         else
