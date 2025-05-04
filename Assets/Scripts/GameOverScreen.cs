@@ -4,6 +4,7 @@ public class GameOverScreen : MonoBehaviour
 {
     private Canvas canvas;
     public static GameOverScreen Instance { get; private set; }
+    bool playedSound = false;
     
     private void Awake() 
     { 
@@ -25,6 +26,11 @@ public class GameOverScreen : MonoBehaviour
 
     public void Show()
     {
+        if (!playedSound)
+        {
+            SoundManager.PlaySound(SoundManager.SoundType.BELL);
+            playedSound = true;
+        }
         canvas.enabled = true;
     }
 }
