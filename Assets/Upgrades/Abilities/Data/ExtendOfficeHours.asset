@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Extend Office Hours
+  frenchName: Prolonger les Heures de Bureau
   description: A lot of students are showing up to your office for questions, extend
     your office hours so more students can come
+  frenchDescription: "Beaucoup d'\xE9tudiants viennent \xE0 votre bureau pour demander
+    des questions, prolongez vos heures de bureaux pour vous assurez qu'il y a assez
+    de temps consacr\xE9 \xE0 chaque \xE9l\xE8ve "
   cost: 2
   engagementGain: 0
   comprehensionGain: 0

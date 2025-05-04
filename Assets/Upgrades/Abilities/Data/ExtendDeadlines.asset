@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Extend Deadlines
+  frenchName: Prolonger les Dates de Remises
   description: Assignment and Project deadlines are coming up, extend the deadlines
     so students feel less stressed
+  frenchDescription: "Les dates limites d'examens et de devoirs approchent. Donnez
+    leur plus de temps pour compl\xE9ter leurs travaux."
   cost: 3
   engagementGain: 0
   comprehensionGain: 0
