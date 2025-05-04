@@ -4,6 +4,8 @@ public class GameOverScreen : MonoBehaviour
 {
     private Canvas canvas;
     public static GameOverScreen Instance { get; private set; }
+
+    [SerializeField] private PlayerRaycast playerRaycast;
     bool playedSound = false;
     
     private void Awake() 
@@ -32,5 +34,8 @@ public class GameOverScreen : MonoBehaviour
             playedSound = true;
         }
         canvas.enabled = true;
+        playerRaycast.enabled = false;
+        Time.timeScale = 0f;
+
     }
 }
