@@ -22,9 +22,11 @@ namespace UI.Menus.Scripts
         // Main menu config
         [Header("Settings")] 
         [Tooltip("Scene to load upon play, if any. Will hide the menu instead if no scene asset.")]
-        [SerializeField] private GameObject scene;
+        [SerializeField] private string scene;
 
         private MenuAudio audio;
+        
+        [SerializeField] private MainMenuSequence mainMenuSequence;
     
         // Main menu itself
         private Canvas canvas;
@@ -74,14 +76,9 @@ namespace UI.Menus.Scripts
         public void OnPlayButton()
         {
             audio.PlayClickSound();
-            if (scene)
-            {
-                SceneManager.LoadScene(scene.name);
-            }
-            else
-            {
-                Hide();
-            }
+            
+            mainMenuSequence.Play();
+            Hide();
         }
 
         /// <summary>

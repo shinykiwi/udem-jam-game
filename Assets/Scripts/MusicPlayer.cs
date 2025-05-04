@@ -1,10 +1,17 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MusicPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
     public AudioClip[] songs;
     public float volume;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

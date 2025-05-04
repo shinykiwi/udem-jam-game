@@ -124,7 +124,7 @@ MonoBehaviour:
   credits: {fileID: 8583472907675249965}
   options: {fileID: 1998701907882503220}
   menu: {fileID: 7655157172174120883}
-  scene: {fileID: 0}
+  scene: Main
 --- !u!114 &1657483036437978844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 20
+  m_Spacing: 7.5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
