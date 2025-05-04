@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
         upgradeButton.gameObject.SetActive(false);
         TabManager.instance.resetTab();
         SoundManager.PlaySound(SoundManager.SoundType.POPUPOPEN);
+        StudentBrain.isPaused = true;
         
     }
 
@@ -30,5 +31,6 @@ public class UIManager : MonoBehaviour
         upgradePanel.SetActive(false);
         upgradeButton.gameObject.SetActive(true);
         SoundManager.PlaySound(SoundManager.SoundType.POPUPCLOSE);
+        StudentBrain.isPaused = false;
     }
 }

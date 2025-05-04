@@ -109,11 +109,21 @@ public class StudentBrain : MonoBehaviour
         }
     }
 
+
+    public static bool isPaused;
     IEnumerator RollDiceContinuously()
     {
+
+        
         
         while (canRoll && (State != StudentState.Question))
         {
+            
+            while (isPaused)
+            {
+                yield return null;
+            }
+
             Debug.Log(studentData.studentName + " is rolling");
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
             switch (State)
@@ -168,6 +178,7 @@ public class StudentBrain : MonoBehaviour
     }
     private void RollAttentiveDice()
     {
+        
         float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.Engagement;
 
         // If the student is already attentive, they are more likely to stay attentive
