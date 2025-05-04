@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
 
     public static Student[] students;
     
-    
     private void Awake() 
     { 
         if (Instance != null && Instance != this) 
