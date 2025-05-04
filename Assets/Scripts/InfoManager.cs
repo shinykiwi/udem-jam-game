@@ -26,9 +26,16 @@ public class InfoManager : MonoBehaviour
     
     public void displayInfo(Tab tab)
     {
-        nameText.text = tab.tabName;
-        descriptionText.text = tab.description;
-        
+        if (Language.isEnglish)
+        {
+            nameText.text = tab.tabName;
+            descriptionText.text = tab.description;
+        } else
+        {
+            nameText.text = tab.frenchName;
+            nameText.text = tab.frenchDescription;
+        }
+
         purchaseButton.gameObject.SetActive(false);
         costText.gameObject.SetActive(false);
 
@@ -38,9 +45,18 @@ public class InfoManager : MonoBehaviour
     public void displayUpgrade(Upgrade upgrade)
     {
         UpgradeItem upgradeItem = upgrade.getUpgradeItem();
-        nameText.text = upgradeItem.upgradeName;
-        descriptionText.text = upgradeItem.description;
-        costText.text = "-"  + upgradeItem.cost.ToString() + " Focus";
+
+        if (Language.isEnglish)
+        {
+            nameText.text = upgradeItem.upgradeName;
+            descriptionText.text = upgradeItem.description;
+            costText.text = "-" + upgradeItem.cost.ToString() + " Focus";
+        } else
+        {
+            nameText.text = upgradeItem.frenchName;
+            descriptionText.text = upgradeItem.frenchDescription;
+            costText.text = "-" + upgradeItem.cost.ToString() + " Focus";
+        }
         
         purchaseButton.onClick.RemoveAllListeners();
         purchaseButton.onClick.AddListener(() =>

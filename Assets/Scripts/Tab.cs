@@ -6,7 +6,9 @@ public class Tab : MonoBehaviour
 
     [SerializeField] private Page page;
     public string tabName;
+    public string frenchName;
     public string description;
+    public string frenchDescription;
 
     private Button button;
 
