@@ -19,4 +19,4 @@ MonoBehaviour:
   attentiveThreshold: 0.001
   learningThreshold: 0.001
   burnoutThreshold: 0.001
-  secondsBetweenRolls: 6
+  secondsBetweenRolls: 5
