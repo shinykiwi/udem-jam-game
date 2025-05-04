@@ -17,6 +17,6 @@ MonoBehaviour:
   description: Bring real world objects into the classroom as examples to use during
     class.
   cost: 2
-  engagementGain: 0
+  engagementGain: 0.05
   comprehensionGain: 0.2
   burnoutGain: 0

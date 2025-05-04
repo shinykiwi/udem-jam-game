@@ -17,6 +17,6 @@ MonoBehaviour:
   description: Use videos as a visual aid in class to boost engagement and provide
     thoughtful examples.
   cost: 1
-  engagementGain: 0
+  engagementGain: 0.05
   comprehensionGain: 0.1
   burnoutGain: 0

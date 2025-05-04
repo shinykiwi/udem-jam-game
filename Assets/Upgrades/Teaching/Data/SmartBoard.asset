@@ -16,6 +16,6 @@ MonoBehaviour:
   upgradeName: Smart Board
   description: Use a smartboard to help your students visualize the material better
   cost: 1
-  engagementGain: 0
+  engagementGain: 0.05
   comprehensionGain: 0.2
   burnoutGain: 0
