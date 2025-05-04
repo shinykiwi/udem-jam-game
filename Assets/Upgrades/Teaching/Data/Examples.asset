@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Using Examples
+  frenchName: Utilisez les exemples
   description: Use examples that the students may be able to understand and relate
     to
+  frenchDescription: "Utilisez des exemples que les \xE9l\xE8ves peuvent comprendre
+    et qu'ils peuvent s'identifier."
   cost: 0
   engagementGain: 0
   comprehensionGain: 0.05

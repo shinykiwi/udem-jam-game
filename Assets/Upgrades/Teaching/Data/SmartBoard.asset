@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Smart Board
+  frenchName: Tableau interactif
   description: Use a smartboard to help your students visualize the material better
+  frenchDescription: "Utilisez un tableau blanc interactif pour aider vos \xE9l\xE8ves
+    \xE0 mieux visualiser le contenu."
   cost: 1
   engagementGain: 0.05
   comprehensionGain: 0.2

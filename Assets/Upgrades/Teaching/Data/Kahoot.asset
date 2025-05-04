@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Kahoot Quizzes
+  frenchName: Quiz Kahoot
   description: Hold Kahoot quizzes in class to foster engagement and test your students'
     academic progress.
+  frenchDescription: "Organisez des quiz Kahoot en classe pour encourager l'engagement
+    et mesurer les progr\xE8s scolaires de vos \xE9l\xE8ves."
   cost: 1
   engagementGain: 0
   comprehensionGain: 0.1

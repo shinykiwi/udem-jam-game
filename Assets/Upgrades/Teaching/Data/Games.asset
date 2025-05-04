@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Games
+  frenchName: Les jeux
   description: Incorporate games into your teaching methods.
+  frenchDescription: 
   cost: 3
   engagementGain: 0.2
   comprehensionGain: 0.2

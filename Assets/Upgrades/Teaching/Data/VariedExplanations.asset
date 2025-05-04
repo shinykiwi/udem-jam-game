@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Varied Explanations
+  frenchName: "Explications vari\xE9es"
   description: Explain concepts using different words or examples for students who
     do not understand your initial explanation of a topic.
+  frenchDescription: "Expliquez les concepts en utilisant des mots ou des exemples
+    diff\xE9rents pour les \xE9l\xE8ves qui ne comprennent pas votre explication
+    initiale d\u2019un sujet."
   cost: 2
   engagementGain: 0
   comprehensionGain: 0.2
