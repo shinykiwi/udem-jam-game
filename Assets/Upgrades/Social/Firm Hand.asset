@@ -12,20 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Firm Hand
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 4e84c39b7dc65114d9cdae724c441cae, type: 3}
   upgradeName: Firm Hand
-  category: 0
-  upgradeDescription: You set up clear guidelines and rules that maintain a sense
-    of respect for your students. This upgrade helps you create a well-structured
-    environment where expectations are understood, and boundaries are respected,
-    but it doesn't cross into harshness. Students know when they need to focus, and
-    they feel safe under the predictable structure you've set. However, over-relying
-    on this method may lead to increased tension, especially if too much rigidity
-    is enforced.
-  cost: 0
-  coUpgradeItems:
-  - {fileID: 0}
-  - {fileID: 0}
+  description: Be more strict, students who make a rucus are told to behave
+  cost: 1
   engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0.05

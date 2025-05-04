@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,14 +6,20 @@ public class Upgrade : MonoBehaviour
 {
     
     [SerializeField] UpgradeItem upgradeItem;
-    
-    void Start()
+    Button button;
+
+    void Awake()
     {
+        button = GetComponent<Button>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        button.onClick.AddListener(() => InfoManager.instance.displayUpgrade(this));
+    }
+
+    public UpgradeItem getUpgradeItem()
+    {
+        return upgradeItem;
     }
 }

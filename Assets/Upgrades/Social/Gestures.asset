@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Gestures
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  upgradeName: 
-  category: 0
-  upgradeDescription: 
-  cost: 0
-  coUpgradeItems: []
+  upgradeName: Gestures
+  description: Use hand gestures and move around the classroom to captivate students
+    more
+  cost: 1
   engagementGain: 0
   comprehensionGain: 0
   burnoutGain: 0
