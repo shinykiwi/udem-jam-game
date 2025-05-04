@@ -31,4 +31,9 @@ public class Player : MonoBehaviour
         }
         
     }
+
+    public void OnMenu()
+    {
+        playerRaycast.enabled = !playerRaycast.enabled;
+    }
 }
