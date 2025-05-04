@@ -1,16 +1,18 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 public class ChangeText : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
+    [SerializeField] string english_text;
+    [SerializeField] string french_text;
 
-    // Update is called once per frame
-    void Update()
+    
+    TextMeshProUGUI textMesh;
+    public void Start()
     {
-        
+        textMesh = GetComponent<TextMeshProUGUI>();
+        textMesh.text =  Language.isEnglish? english_text : french_text;
     }
 }
