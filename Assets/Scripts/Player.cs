@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
         {
             emote.StopEmoting();
             studentBrain.enterPreviousState();
+            
             //studentBrain.State = StudentBrain.StudentState.Null;
         }
         
