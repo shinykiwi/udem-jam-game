@@ -13,7 +13,8 @@ public class SoundManager : MonoBehaviour
         POPUPOPEN,
         POPUPCLOSE,
         SELECT,
-        SWIPE
+        SWIPE,
+        PURCHASE
     }
 
     [SerializeField] private SoundList[] soundList;
