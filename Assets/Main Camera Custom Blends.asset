@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Main Camera Custom Blends
   m_EditorClassIdentifier: 
   CustomBlends:
-  - From: 
-    To: 
+  - From: MenuCinemachineCam
+    To: MainCinemachineCam
     Blend:
-      Style: 0
-      Time: 0
+      Style: 2
+      Time: 1
       CustomCurve:
         serializedVersion: 2
         m_Curve: []
