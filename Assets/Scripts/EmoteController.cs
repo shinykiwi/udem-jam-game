@@ -24,6 +24,8 @@ public class EmoteController : MonoBehaviour
     
     private bool isEmoting = false;
 
+    private Vector3 initialTextLocation;
+
     public bool IsEmoting
     {
         get => isEmoting;
@@ -48,6 +50,7 @@ public class EmoteController : MonoBehaviour
         // Should not be emoting to begin with
         IsEmoting = false;
         text.enabled = false;
+        initialTextLocation = text.transform.position;
     }
 
     private void TextAnimation(string s)
@@ -64,6 +67,7 @@ public class EmoteController : MonoBehaviour
     {
         text.enabled = false;
         text.color = Color.white;
+        text.transform.position = initialTextLocation;
     }
 
     private void EmoteOnce(Sprite sprite)
