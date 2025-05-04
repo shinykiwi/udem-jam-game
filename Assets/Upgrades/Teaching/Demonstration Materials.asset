@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Demonstration Materials
   description: Bring real world objects into the classroom as examples to use during
     class.
-  cost: 0
+  cost: 2
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.2
   burnoutGain: 0

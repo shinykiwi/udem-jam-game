@@ -17,7 +17,7 @@ MonoBehaviour:
   description: Group teams based on performace, high performing students are placed
     in one team, low performing are place in another. This helps manage teams more
     easily
-  cost: 0
+  cost: 2
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.2
   burnoutGain: 0

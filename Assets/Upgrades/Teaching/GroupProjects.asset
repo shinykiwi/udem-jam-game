@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Group Projects
   description: Incorporate group projects into your classroom, fostering collaboration
     and communication. Students are assigned to groups randomly.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
-  burnoutGain: 0
+  comprehensionGain: 0.1
+  burnoutGain: 0.1

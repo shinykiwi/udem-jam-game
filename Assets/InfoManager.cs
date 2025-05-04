@@ -17,6 +17,12 @@ public class InfoManager : MonoBehaviour
     {
         instance = this;
     }
+
+    void Start()
+    {
+        
+        OnUpgradePurchased+= GameManager.Instance.Purchase;
+    }
     
     public void displayInfo(Tab tab)
     {

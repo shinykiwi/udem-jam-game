@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Breaks
   description: Long classes make it harder for students to pay attetion in class,
     add a small break in between your lectures
-  cost: 0
+  cost: 1
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: -0.2

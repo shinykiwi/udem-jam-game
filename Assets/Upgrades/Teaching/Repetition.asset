@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Repetition
   description: Repeat the material to the students more times to make them remember
     it.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: -0.2
   burnoutGain: 0

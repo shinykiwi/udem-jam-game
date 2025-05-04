@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: Shouting
   m_EditorClassIdentifier: 
+  isGood: 0
   upgradeName: Shouting
   description: You start shouting at students who are being disruptive before kicking
     them out and calling their parents
-  cost: 0
+  cost: 1
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: 0.3

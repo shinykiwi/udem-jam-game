@@ -15,7 +15,7 @@ MonoBehaviour:
   isGood: 1
   upgradeName: Study Guides
   description: Give your students a study guide to help them prepare for examinations.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.2
   burnoutGain: 0

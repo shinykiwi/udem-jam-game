@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Visual Aid
   description: Add a visual aid to your class, making teaching for yourself easier
     and making learning for the students more enjoyable.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.1
   burnoutGain: 0

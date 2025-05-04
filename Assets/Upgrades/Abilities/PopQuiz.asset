@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
-  m_Name: Reiterate
+  m_Name: PopQuiz
   m_EditorClassIdentifier: 
-  isGood: 1
-  upgradeName: Using Examples
-  description: Use examples that the students may be able to understand and relate
-    to
-  cost: 0
+  isGood: 0
+  upgradeName: Pop Quiz
+  description: You announce that you'll be having pop quizes happening in class every
+    week. Students have to make sure to study material after class
+  cost: 1
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: 0.3

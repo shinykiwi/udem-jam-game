@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Compete For Fun
   description: Host a Kahoot in class for no reward, just for the enjoyment and engagement
     of your students.
-  cost: 0
+  cost: 2
   engagementGain: 0
-  comprehensionGain: 0
-  burnoutGain: 0
+  comprehensionGain: 0.2
+  burnoutGain: -0.1

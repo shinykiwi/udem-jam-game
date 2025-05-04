@@ -15,7 +15,7 @@ MonoBehaviour:
   isGood: 1
   upgradeName: Games
   description: Incorporate games into your teaching methods.
-  cost: 0
-  engagementGain: 0
-  comprehensionGain: 0
+  cost: 3
+  engagementGain: 0.2
+  comprehensionGain: 0.2
   burnoutGain: 0

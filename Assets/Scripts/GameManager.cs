@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        InfoManager.instance.OnUpgradePurchased += Purchase;
         //focusPoints = 0;
         //engagement = 0;
         //comprehension = 0;
@@ -52,7 +51,7 @@ public class GameManager : MonoBehaviour
         
         if (FocusPoints >= upgradeItem.cost)
         {
-
+            Debug.Log("Yo, you just bought something");
             FocusPoints -= upgradeItem.cost;
             Engagement += upgradeItem.engagementGain;
             Comprehension += upgradeItem.comprehensionGain;

@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Balanced Groups
   description: Place students with high performance and low performance on the same
     group, this could lead to issues where some people are doing more work than others
-  cost: 0
+  cost: 2
   engagementGain: 0
-  comprehensionGain: 0
-  burnoutGain: 0
+  comprehensionGain: -0.2
+  burnoutGain: 0.1

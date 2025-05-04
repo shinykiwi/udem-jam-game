@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Extend Office Hours
   description: A lot of students are showing up to your office for questions, extend
     your office hours so more students can come
-  cost: 0
+  cost: 2
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: -0.2

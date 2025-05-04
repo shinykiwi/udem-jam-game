@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Extend Deadlines
   description: Assignment and Project deadlines are coming up, extend the deadlines
     so students feel less stressed
-  cost: 0
+  cost: 3
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: -0.5

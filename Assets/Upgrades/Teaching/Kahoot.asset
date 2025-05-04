@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Kahoot Quizzes
   description: Hold Kahoot quizzes in class to foster engagement and test your students'
     academic progress.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.1
   burnoutGain: 0

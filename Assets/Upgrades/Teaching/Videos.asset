@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Videos
   description: Use videos as a visual aid in class to boost engagement and provide
     thoughtful examples.
-  cost: 0
+  cost: 1
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.1
   burnoutGain: 0

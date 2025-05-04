@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
-  m_Name: Punishments
+  m_Name: Examples
   m_EditorClassIdentifier: 
-  upgradeName: Pop Quiz
-  description: You announce that you'll be having pop quizes happening in class every
-    week. Students have to make sure to study material after class
+  isGood: 1
+  upgradeName: Using Examples
+  description: Use examples that the students may be able to understand and relate
+    to
   cost: 0
   engagementGain: 0
   comprehensionGain: 0

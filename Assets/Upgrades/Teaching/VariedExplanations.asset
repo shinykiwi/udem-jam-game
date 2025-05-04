@@ -16,7 +16,7 @@ MonoBehaviour:
   upgradeName: Varied Explanations
   description: Explain concepts using different words or examples for students who
     do not understand your initial explanation of a topic.
-  cost: 0
+  cost: 2
   engagementGain: 0
-  comprehensionGain: 0
+  comprehensionGain: 0.2
   burnoutGain: 0

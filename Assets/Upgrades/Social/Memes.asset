@@ -15,7 +15,7 @@ MonoBehaviour:
   isGood: 1
   upgradeName: Memes
   description: Add memes to your slides, showing that you can relate to your students
-  cost: 1
-  engagementGain: 0.1
+  cost: 2
+  engagementGain: 0.2
   comprehensionGain: 0
   burnoutGain: 0
