@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Breaks
-  description: Long classes make it harder for students to pay attetion in class,
+  frenchName: Pauses
+  description: Long classes make it harder for students to pay attention in class,
     add a small break in between your lectures
+  frenchDescription: "Il est difficile de se concentrer lors des cours tr\xE8s longs.
+    Pr\xE9voyez des pauses durant les p\xE9riodes de cours "
   cost: 1
   engagementGain: 0
   comprehensionGain: 0

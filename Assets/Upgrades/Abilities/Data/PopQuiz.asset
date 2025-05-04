@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Pop Quiz
-  description: You announce that you'll be having pop quizes happening in class every
-    week. Students have to make sure to study material after class
+  frenchName: Quiz Pop
+  description: You announce that you'll be having pop quizzes happening in class
+    every week. Students have to make sure to study material after class
+  frenchDescription: "Vous annoncez qu'il va avoir des quiz pop en classe \xE0 chaque
+    semaine. Les \xE9tudiants devront savoir la mati\xE8re avant les prochains cours"
   cost: 1
   engagementGain: 0
   comprehensionGain: 0

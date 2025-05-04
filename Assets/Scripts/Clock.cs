@@ -5,13 +5,19 @@ using UnityEngine;
 public class Clock : MonoBehaviour
 {
     private float minutes = 0;
-    private float hours = 9;
+    private int hours = 9;
     
     [SerializeField] private TextMeshProUGUI timeText;
 
     private void Update()
     {
         minutes += Time.deltaTime;
+
+        if (hours >= 13)
+        {
+            // end the day
+            GameOverScreen.Instance.Show();
+        }
 
         if (minutes > 59)
         {
@@ -36,7 +42,7 @@ public class Clock : MonoBehaviour
 
     private void SpeedUp()
     {
-        Time.timeScale *= 3;
+        Time.timeScale *= 10;
     }
 
     private void SpeedNormal()
