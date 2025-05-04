@@ -944,6 +944,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   english_text: Credits
   french_text: "Cr\xE9dits"
+--- !u!1 &839441232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 703749440970370202, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
+  m_PrefabInstance: {fileID: 1578949814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &839441236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839441232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfad978edec87c343a960bf3884391cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Back
+  frenchText: Retour
 --- !u!1001 &864365628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2653,6 +2672,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 860695962954841880, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190234574}
+    - targetCorrespondingSourceObject: {fileID: 9015409235202251915, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2108824901}
+    - targetCorrespondingSourceObject: {fileID: 703749440970370202, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 839441236}
     - targetCorrespondingSourceObject: {fileID: 3779940183737168785, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 504117444}
@@ -2859,6 +2884,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2108824897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015409235202251915, guid: 297ae24748d49484e83a97718cbeb25d, type: 3}
+  m_PrefabInstance: {fileID: 1578949814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108824901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108824897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfad978edec87c343a960bf3884391cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Credits
+  frenchText: "Cr\xE9dits"
 --- !u!4 &1213794159654794640
 Transform:
   m_ObjectHideFlags: 0
