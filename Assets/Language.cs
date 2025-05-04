@@ -13,7 +13,8 @@ public class Language : MonoBehaviour
     public void Awake()
     {
         instance = this;
-        button = GetComponent<Button>();
+        DontDestroyOnLoad(gameObject); // persists across scenes
+        
     }
     
     
