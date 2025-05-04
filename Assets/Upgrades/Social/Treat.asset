@@ -16,6 +16,6 @@ MonoBehaviour:
   description: Give treats to your students who show up early, ask questions, get
     good marks
   cost: 0
-  engagementGain: 0.1
-  comprehensionGain: 0
-  burnoutGain: 0.05
+  engagementGain: 1
+  comprehensionGain: 1
+  burnoutGain: 1

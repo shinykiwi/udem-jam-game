@@ -19,14 +19,24 @@ public class GameManager : MonoBehaviour
             Instance = this; 
         } 
     }
+
+    public void Start()
+    {
+        InfoManager.instance.OnUpgradePurchased += Purchase;
+        //focusPoints = 0;
+        //engagement = 0;
+        //comprehension = 0;
+        //burnout = 0;
+    }
+    
     
     // Points
-    private int focusPoints;
+    private int _focusPoints;
     
     // Stats
-    private float engagement;
-    private float comprehension;
-    private float burnout;
+    private float _engagement;
+    private float _comprehension;
+    private float _burnout;
     
     
     // Events
@@ -35,43 +45,59 @@ public class GameManager : MonoBehaviour
     public event Action<float> OnComprehensionChanged;
     public event Action<float> OnBurnoutChanged;
 
+
+    public void Purchase(Upgrade upgrade)
+    {
+        UpgradeItem upgradeItem = upgrade.getUpgradeItem();
+        
+        if (FocusPoints >= upgradeItem.cost)
+        {
+
+            FocusPoints -= upgradeItem.cost;
+            Engagement += upgradeItem.engagementGain;
+            Comprehension += upgradeItem.comprehensionGain;
+            Burnout += upgradeItem.burnoutGain;
+            upgrade.onPurchase();
+            
+        }
+    }
     public int FocusPoints
     {
-        get => focusPoints;
+        get => _focusPoints;
         set
         {
-            focusPoints = Mathf.Max(0, value);
-            OnFocusPointsChanged?.Invoke(focusPoints);
+            _focusPoints = Mathf.Max(0, value);
+            OnFocusPointsChanged?.Invoke(_focusPoints);
         } 
     }
     
     public float Engagement
     {
-        get => engagement;
+        get => _engagement;
         set
         {
-            engagement = Mathf.Clamp(value, 0f, 1);
-            OnEngagementChanged?.Invoke(engagement);
+            _engagement = Mathf.Clamp(value, 0f, 1);
+            OnEngagementChanged?.Invoke(_engagement);
         }
     }
 
     public float Comprehension
     {
-        get => comprehension;
+        get => _comprehension;
         set
         {
-            comprehension = Mathf.Clamp( value, 0f, 1);
-            OnComprehensionChanged?.Invoke(comprehension);
+            _comprehension = Mathf.Clamp( value, 0f, 1);
+            OnComprehensionChanged?.Invoke(_comprehension);
         } 
     }
 
     public float Burnout
     {
-        get => burnout;
+        get => _burnout;
         set
         {
-            burnout = Mathf.Clamp(value, 0f, 1);
-            OnBurnoutChanged?.Invoke(burnout);
+            _burnout = Mathf.Clamp(value, 0f, 1);
+            OnBurnoutChanged?.Invoke(_burnout);
         } 
     }
     

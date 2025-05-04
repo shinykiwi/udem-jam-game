@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class InfoManager : MonoBehaviour
     
     public static InfoManager instance;
 
+    public Action<Upgrade> OnUpgradePurchased;
     public void Awake()
     {
         instance = this;
@@ -29,12 +31,15 @@ public class InfoManager : MonoBehaviour
     public void displayUpgrade(Upgrade upgrade)
     {
         UpgradeItem upgradeItem = upgrade.getUpgradeItem();
-        print(upgrade.name);
-        print(upgradeItem.name);
         nameText.text = upgradeItem.upgradeName;
         descriptionText.text = upgradeItem.description;
         costText.text = "-"  + upgradeItem.cost.ToString() + " Focus";
         
+        purchaseButton.onClick.RemoveAllListeners();
+        purchaseButton.onClick.AddListener(() =>
+        {
+            OnUpgradePurchased?.Invoke(upgrade);
+        });
         purchaseButton.gameObject.SetActive(true);
         costText.gameObject.SetActive(true);
         

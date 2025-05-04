@@ -7,6 +7,7 @@ public class Upgrade : MonoBehaviour
     
     [SerializeField] UpgradeItem upgradeItem;
     Button button;
+    [SerializeField] Upgrade[] lockedUpgrades;
 
     void Awake()
     {
@@ -21,5 +22,13 @@ public class Upgrade : MonoBehaviour
     public UpgradeItem getUpgradeItem()
     {
         return upgradeItem;
+    }
+
+    public void onPurchase()
+    {
+        foreach (Upgrade upgrade in lockedUpgrades)
+        {
+            upgrade.gameObject.SetActive(true);
+        }
     }
 }
