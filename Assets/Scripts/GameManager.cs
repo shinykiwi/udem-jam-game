@@ -111,8 +111,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Engagement +=0.1f;
-            Comprehension += 0.5f;
+            
             FocusPoints+=1;
         }
     }

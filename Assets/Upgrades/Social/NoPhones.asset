@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: No Phones Allowed
   description: A strict no phone policy is enforced in class so no one is allowed
     to use their phone while you are teaching
-  cost: 0
+  cost: 2
   engagementGain: 0
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: 0.1

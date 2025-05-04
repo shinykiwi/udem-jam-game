@@ -16,6 +16,6 @@ MonoBehaviour:
   description: You're witty, sharp but also a bit too cutting. Your scarcasm gets
     laughs from few but confuses others and alienates many
   cost: 0
-  engagementGain: 0
+  engagementGain: -0.2
   comprehensionGain: 0
-  burnoutGain: 0
+  burnoutGain: 0.2

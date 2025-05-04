@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Self Deprication
   description: You start making jokes about yourself in class, and its starting to
     get kind of sad
-  cost: 0
-  engagementGain: 0
+  cost: 2
+  engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0

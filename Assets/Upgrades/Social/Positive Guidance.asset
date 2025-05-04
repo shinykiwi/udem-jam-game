@@ -15,6 +15,6 @@ MonoBehaviour:
   upgradeName: Positive Guidance
   description: You offer more support to students who are struggling in class
   cost: 0
-  engagementGain: 0.05
+  engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: -0.1

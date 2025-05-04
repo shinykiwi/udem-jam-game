@@ -1,13 +1,19 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Upgrade : MonoBehaviour
+public class Upgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     
     [SerializeField] UpgradeItem upgradeItem;
     Button button;
     [SerializeField] Upgrade[] lockedUpgrades;
+    
+    
+    private static Vector3 originalScale;
+    public static float scaleFactor = 1.1f;
+    public static float duration = 0.2f;
 
     void Awake()
     {
@@ -30,5 +36,14 @@ public class Upgrade : MonoBehaviour
         {
             upgrade.gameObject.SetActive(true);
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        transform.DOScale(originalScale * scaleFactor, duration).SetEase(Ease.OutBack);    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        throw new NotImplementedException();
     }
 }

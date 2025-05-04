@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Treats
   description: Give treats to your students who show up early, ask questions, get
     good marks
-  cost: 0
-  engagementGain: 1
+  cost: 2
+  engagementGain: 0.2
   comprehensionGain: 1
   burnoutGain: 1
