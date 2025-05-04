@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Kick out
+  frenchName: Expulsions
   description: Kick out students from class who are being disruptive and make them
     stand outside until the next lecture
+  frenchDescription: "Expulsez les \xE9tudiants qui font preuve d'un comportement
+    pertubateur et forcez-les \xE0 rester \xE0 l'ext\xE9rieur de la classe jusqu'au
+    prochain cours"
   cost: 1
   engagementGain: 0
   comprehensionGain: 0
