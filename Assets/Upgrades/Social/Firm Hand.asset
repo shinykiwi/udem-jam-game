@@ -23,9 +23,9 @@ MonoBehaviour:
     on this method may lead to increased tension, especially if too much rigidity
     is enforced.
   cost: 0
-  subUpgradeItems:
-  - {fileID: 11400000, guid: 21f910747a83d3e47b957c95d0f0517d, type: 2}
-  - {fileID: 11400000, guid: abe415733abecde488eb274496828244, type: 2}
+  coUpgradeItems:
+  - {fileID: 0}
+  - {fileID: 0}
   engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0.05
