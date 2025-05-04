@@ -19,14 +19,6 @@ public class GameManager : MonoBehaviour
             Instance = this; 
         } 
     }
-
-    public void Start()
-    {
-        //focusPoints = 0;
-        //engagement = 0;
-        //comprehension = 0;
-        //burnout = 0;
-    }
     
     
     // Points
@@ -51,7 +43,7 @@ public class GameManager : MonoBehaviour
         
         if (FocusPoints >= upgradeItem.cost)
         {
-            Debug.Log("Yo, you just bought something");
+
             FocusPoints -= upgradeItem.cost;
             Engagement += upgradeItem.engagementGain;
             Comprehension += upgradeItem.comprehensionGain;
@@ -152,7 +144,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             
             FocusPoints+=1;

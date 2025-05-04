@@ -18,5 +18,5 @@ MonoBehaviour:
     good marks
   cost: 2
   engagementGain: 0.2
-  comprehensionGain: 1
-  burnoutGain: 1
+  comprehensionGain: 0
+  burnoutGain: 0

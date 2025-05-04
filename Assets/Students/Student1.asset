@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ac0f925dd944e6e90e1e54e1c1d3ad, type: 3}
   m_Name: Student1
   m_EditorClassIdentifier: 
-  attentiveTendency: 0.743
+  studentName: Student1
+  attentiveTendency: 0.2
   learningTendency: 0.217
-  burnoutTendency: 0.571
+  burnoutTendency: 0.55
+  attentiveThreshold: 0.001
+  learningThreshold: 0.001
+  burnoutThreshold: 0.001
+  secondsBetweenRolls: 6
