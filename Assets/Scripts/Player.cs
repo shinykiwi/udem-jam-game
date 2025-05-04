@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
         if (studentBrain.State == StudentBrain.StudentState.Question)
         {
             emote.StopEmoting();
-            studentBrain.State = StudentBrain.StudentState.Null;
+            studentBrain.enterPreviousState();
+            //studentBrain.State = StudentBrain.StudentState.Null;
         }
         
     }

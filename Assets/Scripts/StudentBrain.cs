@@ -31,6 +31,8 @@ public class StudentBrain : MonoBehaviour
             StudentState oldState = state;
             state = value;
             
+            Debug.Log(studentData.studentName +"changing from " + oldState + " to " + state);
+            
             if (oldState != state)
             {
                 UpdateState(oldState);
@@ -42,17 +44,6 @@ public class StudentBrain : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Seconds between rolls for " + name + ": " + studentData.secondsBetweenRolls);
-        Debug.Log("Learning tendency " + studentData.learningTendency);
-        Debug.Log("Attentive tendency " + studentData.attentiveTendency);
-        Debug.Log("Burnout tendency " + studentData.burnoutTendency);
-
-        
-        
-        Debug.Log("GameManager Comprehension " + GameManager.Instance.Comprehension);
-        Debug.Log("GameManager Engagement " + GameManager.Instance.Engagement);
-        Debug.Log("GameManager Burntout " + GameManager.Instance.Burnout);
-        
         StartCoroutine(RollDiceContinuously());
     }
 
@@ -103,7 +94,12 @@ public class StudentBrain : MonoBehaviour
                 break;
         }
     }
-    
+
+
+    public void enterPreviousState()
+    {
+        State = previousState;
+    }
 
     private void Update()
     {
@@ -115,7 +111,6 @@ public class StudentBrain : MonoBehaviour
 
     IEnumerator RollDiceContinuously()
     {
-        Debug.Log("Dice rolling started.");
         
         while (canRoll && (State != StudentState.Question))
         {
@@ -127,9 +122,10 @@ public class StudentBrain : MonoBehaviour
             
         }
         
-        Debug.Log("Dice rolling stopped.");
     }
 
+    
+    StudentState previousState = StudentState.Null;
     private bool RollQuestionDice()
     {
         float questionRoll = 0.2f;
@@ -138,6 +134,7 @@ public class StudentBrain : MonoBehaviour
         if (rand <= (questionRoll))
         {
             // If it passes, change the state to learning
+            previousState = State;
             State = StudentState.Question;
             
             return true;
