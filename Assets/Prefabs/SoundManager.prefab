@@ -74,6 +74,9 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: cb5ff9d0d05e71c49b82c94bf5b554e6, type: 3}
     - {fileID: 8300000, guid: 3532628f973e3844c99c61419a3250c6, type: 3}
+  - name: PURCHASE
+    sounds:
+    - {fileID: 8300000, guid: b200455afba65ce49af598c132f650d8, type: 3}
 --- !u!82 &1157136166228167393
 AudioSource:
   m_ObjectHideFlags: 0
