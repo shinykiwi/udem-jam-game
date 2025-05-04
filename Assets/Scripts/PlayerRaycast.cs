@@ -39,8 +39,8 @@ public class PlayerRaycast : MonoBehaviour
                     if (LastStudent != student)
                     {
                         LastStudent.HideOutline();
+                        playedSound = false;
                     }
-                    
                 }
                 
                 LastStudent = student;
