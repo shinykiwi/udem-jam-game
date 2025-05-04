@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
   m_Name: SelfDepricating
   m_EditorClassIdentifier: 
+  isGood: 0
   upgradeName: Self Deprication
+  frenchName: "Autod\xE9rision"
   description: You start making jokes about yourself in class, and its starting to
     get kind of sad
+  frenchDescription: "Tu commences \xE0 pratiquer de l'autod\xE9rision en classe
+    et \xE7a commence \xE0 devenir un peu triste"
   cost: 2
   engagementGain: 0.1
   comprehensionGain: 0

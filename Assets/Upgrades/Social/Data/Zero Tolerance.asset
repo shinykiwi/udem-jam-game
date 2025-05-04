@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Zero Tolerance
+  frenchName: "Tol\xE9rance Z\xE9ro"
   description: You impose a very rigid, no-exceptions approach to discipline, where
     any violation is met with immediate punishment
+  frenchDescription: "Vous imposez une mani\xE8re d'enseignment tr\xE8s rigide et
+    sans exceptions."
   cost: 2
   engagementGain: 0.1
   comprehensionGain: 0

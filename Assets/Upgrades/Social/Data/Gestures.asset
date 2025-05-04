@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Gestures
+  frenchName: Gestes
   description: Use hand gestures and move around the classroom to captivate students
     more
+  frenchDescription: "Utilisez des gestes de main et d\xE9placez-vous dans la classe
+    pour engager les \xE9tudiants"
   cost: 1
   engagementGain: 0.1
   comprehensionGain: 0

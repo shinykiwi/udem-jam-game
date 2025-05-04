@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: No Phones Allowed
+  frenchName: "T\xE9l\xE9phones Non Autoris\xE9s"
   description: A strict no phone policy is enforced in class so no one is allowed
     to use their phone while you are teaching
+  frenchDescription: "Personne ne peut utiliser leur t\xE9l\xE9phone pendant que
+    vous enseignez"
   cost: 2
   engagementGain: 0.1
   comprehensionGain: 0

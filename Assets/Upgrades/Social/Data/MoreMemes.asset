@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 0
   upgradeName: Even more memes
-  description: add even more memes, memes in the annoucements, homework, slides,
+  frenchName: Encore plus de memes
+  description: Add even more memes, memes in the announcements, homework, slides,
     quizes, everywhere!
+  frenchDescription: "Ajoutez encore plus de memes partout dans votre mani\xE8re
+    d'enseignement"
   cost: 3
   engagementGain: -0.1
   comprehensionGain: 0

@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGood: 1
   upgradeName: Firm Hand
+  frenchName: Main Ferme
   description: Be more strict, students who make a rucus are told to behave
+  frenchDescription: "Sois plus stricte envers les \xE9tudiants. Ceux qui d\xE9rangent
+    la classe se feront punir"
   cost: 1
   engagementGain: 0.1
   comprehensionGain: 0
