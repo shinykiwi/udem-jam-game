@@ -129,6 +129,12 @@ public class StudentBrain : MonoBehaviour
             
             //Just dont roll if still asking
             if (State == StudentState.Question)  continue;
+
+            if (State == StudentState.BurntOut)
+            {
+                State = StudentState.Idle;
+                continue;
+            }
             
             //If you become attentive, dont immediately change to another state
             bool transitioned = false;
@@ -232,6 +238,7 @@ public class StudentBrain : MonoBehaviour
             
             State = StudentState.BurntOut;
             StudentCounts.BurnoutCount++;
+            GameManager.Instance.FocusPoints--;
             //Debug.Log("Success!");
         }
         else
