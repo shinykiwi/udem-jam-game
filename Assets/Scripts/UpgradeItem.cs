@@ -15,7 +15,7 @@ public class UpgradeItem : ScriptableObject
     public Category category;
     public string upgradeDescription;
     public int cost;
-    public UpgradeItem[] subUpgradeItems;
+    public Upgrade[] coUpgradeItems;
 
     public float engagementGain;
     public float comprehensionGain;
