@@ -47,9 +47,7 @@ public class StudentBrain : MonoBehaviour
         Debug.Log("Attentive tendency " + studentData.attentiveTendency);
         Debug.Log("Burnout tendency " + studentData.burnoutTendency);
 
-        GameManager.Instance.Comprehension = 0.9f;
-        GameManager.Instance.Engagement = 0.6f;
-        GameManager.Instance.Burnout = 0.2f;
+        
         
         Debug.Log("GameManager Comprehension " + GameManager.Instance.Comprehension);
         Debug.Log("GameManager Engagement " + GameManager.Instance.Engagement);
