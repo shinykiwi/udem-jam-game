@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bf62a4ae61c4e9a4db5d9772392e4eb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62563801a7d060c44989f489ed6986c5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeItem: {fileID: 11400000, guid: 218ec90b2c1c0cb48bb6a3e2d0c5feda, type: 2}
-  upgradeImage: {fileID: 6220112337858086932}
 --- !u!1 &4748531922194993307
 GameObject:
   m_ObjectHideFlags: 0
