@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Student5
   m_EditorClassIdentifier: 
   studentName: Student5
-  attentiveTendency: 0.593
+  attentiveTendency: 0.263
   learningTendency: 0.46
   burnoutTendency: 0.6
   attentiveThreshold: 0.001
   learningThreshold: 0.001
   burnoutThreshold: 0.001
-  secondsBetweenRolls: 6
+  secondsBetweenRolls: 3

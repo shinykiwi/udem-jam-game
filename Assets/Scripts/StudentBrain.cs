@@ -116,7 +116,7 @@ public class StudentBrain : MonoBehaviour
 
         
         
-        while (canRoll && (State != StudentState.Question))
+        while (canRoll)
         {
             
             while (isPaused)
@@ -124,17 +124,27 @@ public class StudentBrain : MonoBehaviour
                 yield return null;
             }
 
-            Debug.Log(studentData.studentName + " is rolling");
+            //Debug.Log(studentData.studentName + " is rolling");
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
+            
+            //Just dont roll if still asking
+            if (State == StudentState.Question)  continue;
+            
+            //If you become attentive, dont immediately change to another state
+            bool transitioned = false;
             switch (State)
             {
                 case StudentState.Idle:
-                    RollAttentiveDice(); 
+                    transitioned = RollAttentiveDice(); 
                     break;
-                case StudentState.Learning:
-                    RollLearningDice();
+                case StudentState.Attentive:
+                    transitioned = RollLearningDice();
                     break;
             }
+            
+            if (transitioned)
+                continue;
+            
             RollBurntOutDice();
             RollQuestionDice();
 
@@ -160,7 +170,7 @@ public class StudentBrain : MonoBehaviour
         return false;
         
     }
-    private void RollLearningDice()
+    private bool RollLearningDice()
     {
         
         // ex. 0.2 * 0.9 = 0.18
@@ -174,9 +184,11 @@ public class StudentBrain : MonoBehaviour
         {
             // If it passes, change the state to learning
             State = StudentState.Learning;
+            return true;
         }
+        return  false;
     }
-    private void RollAttentiveDice()
+    private bool RollAttentiveDice()
     {
         
         float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.Engagement;
@@ -192,7 +204,9 @@ public class StudentBrain : MonoBehaviour
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
+            return true;
         }
+        return false;
     }
     private void RollBurntOutDice()
     {

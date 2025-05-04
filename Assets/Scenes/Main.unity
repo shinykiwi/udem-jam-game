@@ -1397,7 +1397,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student
+      value: Student 1
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1454,7 +1454,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student (3)
+      value: Student 4
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1590,7 +1590,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student (5)
+      value: Student 6
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2085,7 +2085,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student (4)
+      value: Student 5
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2221,7 +2221,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student (1)
+      value: Student 2
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2357,7 +2357,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2076081320968352973, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_Name
-      value: Student (2)
+      value: Student 3
       objectReference: {fileID: 0}
     - target: {fileID: 2424640936483915474, guid: 1610f358e1667432096563c9faaffe60, type: 3}
       propertyPath: m_LocalPosition.x

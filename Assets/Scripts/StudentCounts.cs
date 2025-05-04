@@ -8,15 +8,9 @@ public class StudentCounts : MonoBehaviour
     [SerializeField] private TextMeshProUGUI learningStudents;
     [SerializeField] private TextMeshProUGUI attentiveStudents;
 
-    public void Start()
-    {
-        GameManager.Instance.OnBurnedOutStudentsChanged += SetBurnout;
-        GameManager.Instance.OnAttentiveStudentsChanged += SetAttentive;
-        GameManager.Instance.OnLearningStudentsChanged += SetLearning;
-    }
 
     //todo: Zaid fix this - Zaid
-    /*
+    
     private void OnEnable()
     {
         GameManager.Instance.OnBurnedOutStudentsChanged += SetBurnout;
@@ -30,7 +24,7 @@ public class StudentCounts : MonoBehaviour
         GameManager.Instance.OnAttentiveStudentsChanged -= SetAttentive;
         GameManager.Instance.OnLearningStudentsChanged -= SetLearning;
     }
-    */
+    
 
     private void SetBurnout(float value)
     {
@@ -46,4 +40,7 @@ public class StudentCounts : MonoBehaviour
     {
         learningStudents.text = value + " Learning";
     }
+
+
+    
 }

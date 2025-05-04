@@ -20,7 +20,9 @@ public class GameManager : MonoBehaviour
         else 
         { 
             Instance = this; 
-        } 
+        }
+
+        students = GameObject.FindObjectsByType<Student>(FindObjectsSortMode.None);
     }
     
     
@@ -154,6 +156,31 @@ public class GameManager : MonoBehaviour
         {
             
             FocusPoints+=1;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Engagement += 0.1f;
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Comprehension += 0.1f;
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Burnout += 0.1f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            string text = "PROGRESS REPORT"; 
+            
+            foreach (Student  student in students)
+            {
+                text += "\n" + student.name + ": " + student.getState();
+            }
+            
+            Debug.Log(text);
         }
     }
 }

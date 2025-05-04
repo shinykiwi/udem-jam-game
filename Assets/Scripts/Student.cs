@@ -10,6 +10,11 @@ public class Student : MonoBehaviour
     
     public StudentBrain Brain { get; private set; }
 
+    public StudentBrain.StudentState getState()
+    {
+        return Brain.State;
+    }
+
     public EmoteController Emote
     {
         get
