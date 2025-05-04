@@ -115,11 +115,18 @@ public class StudentBrain : MonoBehaviour
         while (canRoll && (State != StudentState.Question))
         {
             yield return new WaitForSeconds(studentData.secondsBetweenRolls);
-            
-            RollLearningDice();
-            RollAttentiveDice();
+            switch (State)
+            {
+                case StudentState.Idle:
+                    RollAttentiveDice(); 
+                    break;
+                case StudentState.Learning:
+                    RollLearningDice();
+                    break;
+            }
             RollBurntOutDice();
-            
+            RollQuestionDice();
+
         }
         
     }
@@ -144,10 +151,6 @@ public class StudentBrain : MonoBehaviour
     }
     private void RollLearningDice()
     {
-        if (RollQuestionDice())
-        {
-            return;
-        }
         
         // ex. 0.2 * 0.9 = 0.18
         float learningRoll = studentData.learningTendency * GameManager.Instance.Comprehension;
@@ -173,6 +176,7 @@ public class StudentBrain : MonoBehaviour
         }
         
         float rand = Random.Range(0f, 1f);
+        
         if (rand <= attentiveRoll)
         {
             State = StudentState.Attentive;
