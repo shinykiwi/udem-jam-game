@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Even more memes
   description: add even more memes, memes in the annoucements, homework, slides,
     quizes, everywhere!
-  cost: 0
-  engagementGain: 0
+  cost: 1
+  engagementGain: -0.3
   comprehensionGain: 0
   burnoutGain: 0

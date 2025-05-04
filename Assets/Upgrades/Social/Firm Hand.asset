@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Firm Hand
   description: Be more strict, students who make a rucus are told to behave
-  cost: 0
+  cost: 1
   engagementGain: 0.1
   comprehensionGain: 0
   burnoutGain: 0.05

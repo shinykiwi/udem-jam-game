@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f948ea3240841d4eb67d6b254ba0a13, type: 3}
-  m_Name: Gestures
+  m_Name: Punishments
   m_EditorClassIdentifier: 
-  upgradeName: Gestures
-  description: Use hand gestures and move around the classroom to captivate students
-    more
-  cost: 1
-  engagementGain: 0.1
+  upgradeName: Pop Quiz
+  description: You announce that you'll be having pop quizes happening in class every
+    week. Students have to make sure to study material after class
+  cost: 0
+  engagementGain: 0
   comprehensionGain: 0
   burnoutGain: 0

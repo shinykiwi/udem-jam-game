@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Background Music
   description: Play some soothing background music when class starts to set a relaxing
     mood
-  cost: 0
-  engagementGain: 1
-  comprehensionGain: 1
-  burnoutGain: 1
+  cost: 1
+  engagementGain: 0.1
+  comprehensionGain: 0
+  burnoutGain: 0
