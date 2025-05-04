@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+[DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
     // Singleton
     public static GameManager Instance { get; private set; }
 
     public static Student[] students;
+    
+    
     private void Awake() 
     { 
         if (Instance != null && Instance != this) 
