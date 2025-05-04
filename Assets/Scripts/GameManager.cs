@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
@@ -148,6 +149,11 @@ public class GameManager : MonoBehaviour
             burnoutStudents = value;
             OnBurnedOutStudentsChanged?.Invoke(value);
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void Update()
