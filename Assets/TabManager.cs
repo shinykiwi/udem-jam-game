@@ -28,6 +28,7 @@ public class TabManager : MonoBehaviour
         }
         currentTab = tab;
         currentTab.togglePage();
+        
     }
 
     public void resetTab()

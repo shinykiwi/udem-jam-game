@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
         upgradeButton.gameObject.SetActive(false);
         TabManager.instance.resetTab();
         SoundManager.PlaySound(SoundManager.SoundType.POPUPOPEN);
+        
     }
 
     public void toGameScene()
