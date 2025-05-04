@@ -17,6 +17,6 @@ MonoBehaviour:
   description: add even more memes, memes in the annoucements, homework, slides,
     quizes, everywhere!
   cost: 3
-  engagementGain: -0.3
+  engagementGain: -0.1
   comprehensionGain: 0
   burnoutGain: 0

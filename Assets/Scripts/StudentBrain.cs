@@ -73,6 +73,9 @@ public class StudentBrain : MonoBehaviour
                 case StudentState.BurntOut:
                     GameManager.Instance.BurnoutStudents--;
                     break;
+                case StudentState.Question:
+                    GameManager.Instance.FocusPoints++;
+                    break;
             }
         }
         switch (State)
@@ -136,7 +139,7 @@ public class StudentBrain : MonoBehaviour
         {
             // If it passes, change the state to learning
             State = StudentState.Question;
-            GameManager.Instance.FocusPoints += 1;
+            
             return true;
         }
         return false;

@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+[DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
     // Singleton
     public static GameManager Instance { get; private set; }
 
     public static Student[] students;
+    
+    
     private void Awake() 
     { 
         if (Instance != null && Instance != this) 
@@ -18,14 +21,6 @@ public class GameManager : MonoBehaviour
         { 
             Instance = this; 
         } 
-    }
-
-    public void Start()
-    {
-        //focusPoints = 0;
-        //engagement = 0;
-        //comprehension = 0;
-        //burnout = 0;
     }
     
     
@@ -51,7 +46,7 @@ public class GameManager : MonoBehaviour
         
         if (FocusPoints >= upgradeItem.cost)
         {
-            Debug.Log("Yo, you just bought something");
+
             FocusPoints -= upgradeItem.cost;
             Engagement += upgradeItem.engagementGain;
             Comprehension += upgradeItem.comprehensionGain;
@@ -152,7 +147,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             
             FocusPoints+=1;
