@@ -17,7 +17,7 @@ MonoBehaviour:
   frenchName: "Musique au D\xE9but du Cours"
   description: Play some soothing background music when class starts to set a relaxing
     mood
-  frenchDescription: "Jouez de la musique pour relaxer les \xE9tudiants avec que
+  frenchDescription: "Jouez de la musique pour relaxer les \xE9tudiants avant que
     le cours d\xE9bute"
   cost: 1
   engagementGain: 0.1

@@ -28,6 +28,8 @@ public class Clock : MonoBehaviour
         string end = hours < 12 ? "AM" : "PM";
         timeText.text = hours + ":" +minutes.ToString("00") + end;
 
+        // Removed this for now so that players don't speed up the game and cause the bug to occur
+        /*
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             SpeedUp();
@@ -37,7 +39,8 @@ public class Clock : MonoBehaviour
         {
             SpeedNormal();
         }
-        
+        */
+
     }
 
     private void SpeedUp()

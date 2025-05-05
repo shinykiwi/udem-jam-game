@@ -6,6 +6,8 @@ public class GameOverScreen : MonoBehaviour
     public static GameOverScreen Instance { get; private set; }
 
     [SerializeField] private PlayerRaycast playerRaycast;
+    [SerializeField] private GameObject upgradesPage;
+    [SerializeField] private GameObject upgradesButton;
     bool playedSound = false;
     
     private void Awake() 
@@ -35,6 +37,8 @@ public class GameOverScreen : MonoBehaviour
         }
         canvas.enabled = true;
         playerRaycast.enabled = false;
+        upgradesButton.SetActive(false);
+        upgradesPage.SetActive(false);
         Time.timeScale = 0f;
 
     }

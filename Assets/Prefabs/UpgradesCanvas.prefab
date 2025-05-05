@@ -1085,8 +1085,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   page: {fileID: 5879167894832574257}
   tabName: Social
+  frenchName: 
   description: Social skills improve engagement making students more likely to pay
     attention in class
+  frenchDescription: 
 --- !u!1 &1190661895379504407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,8 +2112,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   page: {fileID: 3633605026827951683}
   tabName: Teaching
+  frenchName: 
   description: Teaching skills improve comprehension and learning of students, employing
     different learning strategies help students learn better
+  frenchDescription: 
 --- !u!1 &1983589287717542652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,7 +2844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -1564, y: -22.19}
+  m_AnchoredPosition: {x: -1564.0002, y: -22.18988}
   m_SizeDelta: {x: 500, y: 193.6}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1360077754714840442
@@ -3253,7 +3257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1582.9, y: -959}
+  m_AnchoredPosition: {x: -1582.9001, y: -958.99994}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &6352223235031786228
@@ -4254,7 +4258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   page: {fileID: 3193187711548713135}
   tabName: Abilities
+  frenchName: 
   description: Extra skills that can help improve class progress and reduce burnout
+  frenchDescription: 
 --- !u!1 &4825404748766273216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,9 +4955,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   page: {fileID: 2003813865897264477}
   tabName: Classroom
+  frenchName: 
   description: You are a teacher of a class of students, your goal is to make sure
     that the students are all paying attention and learning and make sure that the
     students dont burn out
+  frenchDescription: 
 --- !u!1 &6228476841664355096
 GameObject:
   m_ObjectHideFlags: 0

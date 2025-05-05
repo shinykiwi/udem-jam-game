@@ -39,6 +39,7 @@ namespace UI.Menus.Scripts
             // Hide the credits menu and the options menu to start with
             credits.SetActive(false);
             options.SetActive(false);
+            Time.timeScale = 1f;
         }
 
         private void Update()

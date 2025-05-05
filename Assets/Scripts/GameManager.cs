@@ -157,6 +157,8 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
+        // Removed cheat for now
+        /*
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             
@@ -175,6 +177,7 @@ public class GameManager : MonoBehaviour
         {
             Burnout += 0.1f;
         }
+        */
 
         if (Input.GetKeyDown(KeyCode.Q))
         {

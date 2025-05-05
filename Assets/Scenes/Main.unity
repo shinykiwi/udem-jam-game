@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 79369911}
   - component: {fileID: 79369913}
   - component: {fileID: 79369912}
+  - component: {fileID: 79369914}
   m_Layer: 5
   m_Name: Letter
   m_TagString: Untagged
@@ -276,6 +277,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79369910}
   m_CullTransparentMesh: 1
+--- !u!114 &79369914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79369910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Congratulations, you survived your first day of teaching! You managed
+    to get 6 students learning at once. Come see me after school for a bonus.                          
+    - Principal Fring
+  french_text: "Bravo, vous avez surv\xE9cu votre premi\xE8re journ\xE9e d'enseignement!
+    Vous avez r\xE9ussi \xE0 faire apprendre 6 \xE9tudiants en m\xEAme temps. Venez
+    me voir ap\xE8s l'\xE9cole pour un bonus.                           -Directeur
+    Fring"
+--- !u!1 &172666222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7272606060447428561, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &173272878
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +537,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   english_text: Burnout
   french_text: Fatigue
+--- !u!1 &314065975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2949842979694459222, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +723,7 @@ GameObject:
   - component: {fileID: 377261412}
   - component: {fileID: 377261414}
   - component: {fileID: 377261413}
+  - component: {fileID: 377261415}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -818,6 +849,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377261411}
   m_CullTransparentMesh: 1
+--- !u!114 &377261415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377261411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Main Menu
+  french_text: Menu Principal
 --- !u!1001 &482798196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1471,6 +1516,7 @@ GameObject:
   - component: {fileID: 1153421968}
   - component: {fileID: 1153421970}
   - component: {fileID: 1153421969}
+  - component: {fileID: 1153421971}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1596,6 +1642,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153421967}
   m_CullTransparentMesh: 1
+--- !u!114 &1153421971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153421967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  english_text: Day Complete
+  french_text: "Journ\xE9e Termin\xE9e"
 --- !u!1 &1345270834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,6 +1771,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d001fb02ca50148348d309d9dca2d8ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRaycast: {fileID: 1925947090}
+  upgradesPage: {fileID: 314065975}
+  upgradesButton: {fileID: 172666222}
 --- !u!1 &1390445168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,6 +2368,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   english_text: Teaching
   french_text: Enseignement
+--- !u!114 &1925947090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6561109145051168553, guid: a08467da83d5b487ca8bc07f3de89db9, type: 3}
+  m_PrefabInstance: {fileID: 3077332668073268027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d4f3b4afab34415bf805dd78723393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2053117250
 GameObject:
   m_ObjectHideFlags: 0

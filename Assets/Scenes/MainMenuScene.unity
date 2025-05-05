@@ -1346,8 +1346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfad978edec87c343a960bf3884391cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Toggle Language
-  frenchText: Changer de langue
+  englishText: Changer de langue
+  frenchText: Toggle Language
 --- !u!114 &1523370688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,8 +1360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd152ba16a7cc6845a703016075c9287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  english_text: Toggle Language
-  french_text: Changer de langue
+  english_text: Changer de langue
+  french_text: Toggle Language
 --- !u!1 &1525021657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishText: Academic Master
-  frenchText: Maitre D'Academie
+  frenchText: "Maitre D'Acad\xE9mie"
 --- !u!1 &1761768247
 GameObject:
   m_ObjectHideFlags: 0
