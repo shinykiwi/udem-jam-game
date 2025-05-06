@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,7 +34,7 @@ public class InfoManager : MonoBehaviour
         } else
         {
             nameText.text = tab.frenchName;
-            nameText.text = tab.frenchDescription;
+            descriptionText.text = tab.frenchDescription;
         }
 
         purchaseButton.gameObject.SetActive(false);
@@ -59,11 +60,36 @@ public class InfoManager : MonoBehaviour
         }
         
         purchaseButton.onClick.RemoveAllListeners();
+        //When purchase sucessfull
         purchaseButton.onClick.AddListener(() =>
         {
             OnUpgradePurchased?.Invoke(upgrade);
             purchaseButton.interactable = !upgrade.purchased;
+            if (upgrade.purchased)
+                purchaseButton.transform.DOShakeRotation(0.1f, strength: new Vector3(0,0,15), vibrato: 2, randomness: 90f).SetEase(Ease.OutBounce);
+            
         });
+
+        
+        ColorBlock colorBlock = purchaseButton.colors;
+        if (GameManager.Instance.FocusPoints >= upgradeItem.cost)
+        {
+            colorBlock.normalColor = Color.green;
+            colorBlock.highlightedColor = Color.green;
+            
+            purchaseButton.interactable = true;
+        }
+        else
+        {
+            colorBlock.normalColor = Color.gray;
+            colorBlock.highlightedColor = Color.gray;
+            colorBlock.selectedColor = Color.gray;
+            purchaseButton.interactable = false;
+
+        }
+        
+        purchaseButton.colors = colorBlock;
+        
         purchaseButton.gameObject.SetActive(true);
         costText.gameObject.SetActive(true);
         purchaseButton.interactable = !upgrade.purchased;
