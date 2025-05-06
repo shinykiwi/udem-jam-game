@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
+    
+    [SerializeField] public bool debuggerMode = false;
+    
+    
+    
     // Singleton
     public static GameManager Instance { get; private set; }
 
@@ -158,37 +163,40 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
         // Removed cheat for now
-        /*
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            
-            FocusPoints+=1;
-        }
-        
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            Engagement += 0.1f;
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Comprehension += 0.1f;
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            Burnout += 0.1f;
-        }
-        */
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (debuggerMode)
         {
-            string text = "PROGRESS REPORT"; 
-            
-            foreach (Student  student in students)
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
-                text += "\n" + student.name + ": " + student.getState();
+            
+                FocusPoints+=1;
+            }
+        
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                Engagement += 0.1f;
+            }
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Comprehension += 0.1f;
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                Burnout += 0.1f;
             }
             
-            Debug.Log(text);
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                string text = "PROGRESS REPORT"; 
+            
+                foreach (Student  student in students)
+                {
+                    text += "\n" + student.name + ": " + student.getState();
+                }
+            
+                Debug.Log(text);
+            }
         }
+        
     }
 }
