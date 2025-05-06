@@ -2164,6 +2164,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3150440599741518664, guid: ccfed19fb13d34206b075096f471a28a, type: 3}
   m_PrefabInstance: {fileID: 1766222751}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1773439979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5576707335110024992, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+  m_PrefabInstance: {fileID: 2083043401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63cfef37e634384f97e77db4fbad26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1777692842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2402910617169321655, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
@@ -2536,6 +2547,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1563190469947958588, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815541271071277810, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_Name
+      value: Focus
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566029863625800892, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -279.5049
+      objectReference: {fileID: 0}
+    - target: {fileID: 2566029863625800892, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 139.75244
+      objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2562,7 +2589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2949842979694459222, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3609726931199464451, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_text
@@ -2652,6 +2679,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5136322593301544900, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: focusPoints
+      value: 
+      objectReference: {fileID: 1773439979}
     - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2796,7 +2827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7989860000950472290, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8089738152294564254, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2827,7 +2858,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1615191761487896180, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8836934481345076738, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
