@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     
+    //Disable on build
     [SerializeField] public bool debuggerMode = false;
     
     
@@ -162,7 +163,6 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        // Removed cheat for now
 
         if (debuggerMode)
         {
