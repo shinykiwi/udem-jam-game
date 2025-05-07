@@ -2695,6 +2695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradesCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6311904294207634733, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.189941
+      objectReference: {fileID: 0}
     - target: {fileID: 6526468935511373146, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_Pivot.y
       value: 0
