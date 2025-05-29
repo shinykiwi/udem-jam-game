@@ -2394,6 +2394,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -11.840027
       objectReference: {fileID: 0}
+    - target: {fileID: 5789404888760431423, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6228476841664355096, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_Name
       value: UpgradesCanvas
@@ -2402,8 +2406,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 200509892}
+    - target: {fileID: 8568164423515783432, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: testPopup
+      value: 
+      objectReference: {fileID: 11400000, guid: 4627e24be17ef6b4fbd3b4acbf4d5974, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5789404888760431423, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+    - {fileID: -540835000937901006, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+    - {fileID: 5863577129084273866, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10943ed3819b55b4da5696846bb85648, type: 3}

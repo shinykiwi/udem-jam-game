@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9950c3155d818bd469bf05d8c4fa86d9, type: 3}
+  m_Name: CheatingPopup
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 8a06ea54d790b124c91671899c4648b5, type: 3}
+  headlineText: CHEATER!!!
+  bodyText: You were caught cheating, you think you're some sort of academic weapon?

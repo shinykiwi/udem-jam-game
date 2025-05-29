@@ -170,6 +170,7 @@ public class GameManager : MonoBehaviour
             {
             
                 FocusPoints+=1;
+                PopupManager.Instance.TestPopup();
             }
         
             if (Input.GetKeyDown(KeyCode.I))

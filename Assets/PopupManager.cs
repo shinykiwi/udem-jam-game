@@ -1,3 +1,4 @@
+using Prefabs;
 using ScriptableObjects;
 using TMPro;
 using UnityEngine;
@@ -6,10 +7,8 @@ using UnityEngine.UI;
 public class PopupManager : MonoBehaviour
 {
     public static PopupManager Instance;
-    
-    [SerializeField] private Image popupImage;
-    [SerializeField] private TextMeshProUGUI headlineText;
-    [SerializeField] private TextMeshProUGUI bodyText;
+    [SerializeField] private Popup popupPrefab;
+    [SerializeField] private PopupItem testPopup;
     void Awake()
     {
         if (Instance == null)
@@ -22,10 +21,17 @@ public class PopupManager : MonoBehaviour
         }
     }
 
-    public void setPopup(PopupItem item)
+    public void CreatePopup(PopupItem popupItem)
     {
-        popupImage.sprite = item.sprite;
-        headlineText.text = item.headlineText;
-        bodyText.text = item.bodyText;
+        
+        var popup = Instantiate(popupPrefab, transform);
+        popup.setPopup(popupItem);
     }
+
+    public void TestPopup()
+    {
+        CreatePopup(testPopup);
+    }
+
+    
 }
