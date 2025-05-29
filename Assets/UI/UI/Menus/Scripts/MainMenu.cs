@@ -24,7 +24,7 @@ namespace UI.Menus.Scripts
         [Tooltip("Scene to load upon play, if any. Will hide the menu instead if no scene asset.")]
         [SerializeField] private string scene;
 
-        private MenuAudio audio;
+        private MenuAudio _audio;
         
         [SerializeField] private MainMenuSequence mainMenuSequence;
     
@@ -34,7 +34,7 @@ namespace UI.Menus.Scripts
         private void Awake()
         {
             canvas = GetComponent<Canvas>();
-            audio = GetComponentInChildren<MenuAudio>();
+            _audio = GetComponentInChildren<MenuAudio>();
         
             // Hide the credits menu and the options menu to start with
             credits.SetActive(false);
@@ -76,7 +76,7 @@ namespace UI.Menus.Scripts
         /// </summary>
         public void OnPlayButton()
         {
-            audio.PlayClickSound();
+            _audio.PlayClickSound();
             
             mainMenuSequence.Play();
             Hide();
@@ -87,7 +87,7 @@ namespace UI.Menus.Scripts
         /// </summary>
         public void OnCreditsButton()
         {
-            audio.PlayClickSound();
+            _audio.PlayClickSound();
         
             // Show the credits menu
             credits.SetActive(true);
@@ -103,7 +103,7 @@ namespace UI.Menus.Scripts
         /// </summary>
         public void OnOptionsButton()
         {
-            audio.PlayClickSound();
+            _audio.PlayClickSound();
         
             // Show the options menu
             options.SetActive(true);
@@ -118,7 +118,7 @@ namespace UI.Menus.Scripts
         /// </summary>
         public void OnQuitButton()
         {
-            audio.PlayBackSound();
+            _audio.PlayBackSound();
         
             // Quits the game
             Application.Quit();
@@ -139,7 +139,7 @@ namespace UI.Menus.Scripts
         /// </summary>
         public void OnBackButton()
         {
-            audio.PlayBackSound();
+            _audio.PlayBackSound();
             HideAllButMain();
         }
     

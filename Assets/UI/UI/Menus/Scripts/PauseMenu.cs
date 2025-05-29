@@ -5,7 +5,7 @@ namespace UI.Menus.Scripts
    public class PauseMenu : MonoBehaviour
    {
       private Canvas canvas;
-      private MenuAudio audio;
+      private MenuAudio _audio;
 
       [SerializeField] private GameObject options;
       [SerializeField] private GameObject pause;
@@ -14,7 +14,7 @@ namespace UI.Menus.Scripts
       private void Awake()
       {
          canvas = GetComponent<Canvas>();
-         audio = GetComponentInChildren<MenuAudio>();
+         _audio = GetComponentInChildren<MenuAudio>();
       
          // Hide other menus to start
          options.SetActive(false);
@@ -29,12 +29,12 @@ namespace UI.Menus.Scripts
       public void OnResumeButtonClick()
       {
          Toggle();
-         audio.PlayClickSound();
+         _audio.PlayClickSound();
       }
 
       public void OnOptionsButtonClick()
       {
-         audio.PlayClickSound();
+         _audio.PlayClickSound();
       
          // Show the options panel
          options.SetActive(true);
@@ -46,7 +46,7 @@ namespace UI.Menus.Scripts
 
       public void OnBackButtonClick()
       {
-         audio.PlayBackSound();
+         _audio.PlayBackSound();
       
          // Show the pause panel
          pause.SetActive(true);
@@ -58,7 +58,7 @@ namespace UI.Menus.Scripts
 
       public void OnControlsMenuClick()
       {
-         audio.PlayClickSound();
+         _audio.PlayClickSound();
       
          // Show the controls menu
          controls.SetActive(true);
@@ -71,7 +71,7 @@ namespace UI.Menus.Scripts
 
       public void OnQuitButtonClick()
       {
-         audio.PlayBackSound();
+         _audio.PlayBackSound();
          Application.Quit();
       }
 

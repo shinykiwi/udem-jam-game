@@ -20,7 +20,6 @@ public class Tab : MonoBehaviour
     {
         button = GetComponent<Button>();
         //button.onClick.AddListener(() => InfoManager.instance.displayInfo(this));
-
         
     }
     public void togglePage(int state = -1)

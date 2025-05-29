@@ -2306,6 +2306,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2335103143181715595, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4256386168385413296, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4318269230731111775, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 15.030029
@@ -2314,6 +2366,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 200509892}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425239622258636897, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5730988004108192286, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -11.840027

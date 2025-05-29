@@ -27,7 +27,6 @@ public class UIManager : MonoBehaviour
         SoundManager.PlaySound(SoundManager.SoundType.POPUPOPEN);
         StudentBrain.isPaused = true;
         focusPoints.SetFocusPoints(GameManager.Instance.FocusPoints);
-        
     }
 
     public void toGameScene()
