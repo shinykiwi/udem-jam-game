@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9950c3155d818bd469bf05d8c4fa86d9, type: 3}
-  m_Name: CheatingPopup
+  m_Script: {fileID: 11500000, guid: fd815f88089cb6743a6e0adde9611c3d, type: 3}
+  m_Name: TimedPopupItem
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 8a06ea54d790b124c91671899c4648b5, type: 3}
-  headlineText: CHEATER!!!
-  bodyText: You were caught cheating, you think you're some sort of academic weapon?
+  sprite: {fileID: 21300000, guid: 573c5f21043e04b8db24fc7a7fb27e94, type: 3}
+  headlineText: Welcome to class
+  bodyText: 
+  timer: 5

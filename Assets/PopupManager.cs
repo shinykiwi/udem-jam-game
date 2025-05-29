@@ -1,4 +1,5 @@
-using Prefabs;
+using System.Collections;
+using System.Collections.Generic;
 using ScriptableObjects;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,14 @@ public class PopupManager : MonoBehaviour
     public static PopupManager Instance;
     [SerializeField] private Popup popupPrefab;
     [SerializeField] private PopupItem testPopup;
+    private Popup currentPopup;
+
+    private List<TimedPopupItem> timedPopups = new();
+    private Dictionary<string, EventPopupItem> eventPopups = new();
+    
+    [SerializeField] private List<TimedPopupItem> _timedPopups;
+    [SerializeField] private List<EventPopupItem> _eventPopups;
+    
     void Awake()
     {
         if (Instance == null)
@@ -21,11 +30,47 @@ public class PopupManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        InitializeEventPopups();
+        InitializeTimedPopups();
+
+        StartCoroutine(runTimedPopups());
+    }
+
+    private void InitializeEventPopups()
+    {
+        foreach (var eventPopup in _eventPopups)
+        {
+            eventPopups.Add(eventPopup.key, eventPopup);   
+        }
+    }
+
+    private void InitializeTimedPopups()
+    {
+        timedPopups = _timedPopups;
+        timedPopups.Sort((a,b) => a.timer.CompareTo(b.timer));
+    }
+
+    private IEnumerator runTimedPopups()
+    {
+        foreach (var timedPopup in timedPopups)
+        {
+            float time_diff = timedPopup.timer - Time.time;
+            if (time_diff > 0)
+            {
+                yield return new WaitForSeconds(time_diff);
+            }
+            CreatePopup(timedPopup);
+        }
+    }
+
     public void CreatePopup(PopupItem popupItem)
     {
+        if (currentPopup) return;
         
-        var popup = Instantiate(popupPrefab, transform);
-        popup.setPopup(popupItem);
+        currentPopup = Instantiate(popupPrefab, transform);
+        currentPopup.setPopup(popupItem);
     }
 
     public void TestPopup()
