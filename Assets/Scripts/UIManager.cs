@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] Button upgradeButton;
+    [SerializeField] private RectTransform classRoomUI;
+    
     [SerializeField] GameObject upgradePanel;
     
     [SerializeField] FocusPoints focusPoints;
@@ -21,7 +22,7 @@ public class UIManager : MonoBehaviour
     public void toUpgradePage()
     {
         upgradePanel.SetActive(true);
-        upgradeButton.gameObject.SetActive(false);
+        classRoomUI.gameObject.SetActive(false);
         TabManager.instance.resetTab();
         SoundManager.PlaySound(SoundManager.SoundType.POPUPOPEN);
         StudentBrain.isPaused = true;
@@ -32,7 +33,7 @@ public class UIManager : MonoBehaviour
     public void toGameScene()
     {
         upgradePanel.SetActive(false);
-        upgradeButton.gameObject.SetActive(true);
+        classRoomUI.gameObject.SetActive(true);
         SoundManager.PlaySound(SoundManager.SoundType.POPUPCLOSE);
         StudentBrain.isPaused = false;
     }
