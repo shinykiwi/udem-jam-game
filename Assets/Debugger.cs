@@ -5,7 +5,7 @@ public class Debugger : MonoBehaviour
 {
     [SerializeField] private StatsContainer sc;
     [SerializeField] private PointVariable focusPoints;
-    [SerializeField] private TextMeshProUGUI textHolder;
+    [SerializeField] private RectTransform textHolder;
 
     private void Update()
     {

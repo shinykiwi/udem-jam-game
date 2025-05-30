@@ -3173,10 +3173,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2471717054667399157, guid: 0c1fa43304602df4d947de87b9e551bb, type: 3}
-      propertyPath: m_VertexColorAlwaysGammaSpace
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3273137382131039812, guid: 0c1fa43304602df4d947de87b9e551bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
