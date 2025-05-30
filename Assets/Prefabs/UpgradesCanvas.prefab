@@ -1947,7 +1947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshPro: {fileID: 9091286103242052847}
-  focusPoints: {fileID: 0}
+  focusPoints: {fileID: 11400000, guid: a301069654a190e4e9b1192aa2082ed3, type: 2}
 --- !u!1 &1843318920588650061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2321,8 @@ MonoBehaviour:
   descriptionText: {fileID: 4736739684228918821}
   costText: {fileID: 2223802228149175036}
   purchaseButton: {fileID: 4991879223041233545}
-  focusPoints: {fileID: 0}
+  focusPoints: {fileID: 11400000, guid: a301069654a190e4e9b1192aa2082ed3, type: 2}
+  sc: {fileID: 11400000, guid: 4c38a72be95724644ba86eb7ff47c8ea, type: 2}
 --- !u!1 &2049766847840376035
 GameObject:
   m_ObjectHideFlags: 0

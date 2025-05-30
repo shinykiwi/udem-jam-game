@@ -89,10 +89,5 @@ public class PopupManager : MonoBehaviour
         }
     }
 
-    private void TestPopup()
-    {
-        CreatePopup(testPopup);
-    }
-
     
 }

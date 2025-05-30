@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour
     public static Student[] students;
     
     private void Awake() 
-    { 
-        if (Instance != null && Instance != this) 
-        { 
-            Destroy(this); 
-        } 
-        else 
-        { 
-            Instance = this; 
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
         }
 
         students = GameObject.FindObjectsByType<Student>(FindObjectsSortMode.None);

@@ -14,6 +14,9 @@ public class InfoManager : MonoBehaviour
     [SerializeField] PointVariable focusPoints;
     public static InfoManager instance;
 
+    [SerializeField] StatsContainer sc;
+
+
     public Action<Upgrade> OnUpgradePurchased;
     public void Awake()
     {
@@ -23,7 +26,7 @@ public class InfoManager : MonoBehaviour
     void Start()
     {
         
-        OnUpgradePurchased+= GameManager.Instance.Purchase;
+        //OnUpgradePurchased+= GameManager.Instance.Purchase;
     }
     
     public void displayInfo(Tab tab)
@@ -65,6 +68,22 @@ public class InfoManager : MonoBehaviour
         purchaseButton.onClick.AddListener(() =>
         {
             OnUpgradePurchased?.Invoke(upgrade);
+            UpgradeItem upgradeItem = upgrade.getUpgradeItem();
+            if (focusPoints.Value >= upgradeItem.cost)
+            {
+
+                focusPoints.Value -= upgradeItem.cost;
+                sc.Engagement.Value += upgradeItem.engagementGain;
+                sc.Comprehension.Value += upgradeItem.comprehensionGain;
+                sc.Burnout.Value += upgradeItem.burnoutGain;
+                SoundManager.PlaySound(SoundManager.SoundType.PURCHASE);
+                upgrade.onPurchase();
+
+            }
+            else
+            {
+                SoundManager.PlaySound(SoundManager.SoundType.ERROR);
+            }
             purchaseButton.interactable = !upgrade.purchased;
             if (upgrade.purchased)
                 purchaseButton.transform.DOShakeRotation(0.1f, strength: new Vector3(0,0,15), vibrato: 2, randomness: 90f).SetEase(Ease.OutBounce);

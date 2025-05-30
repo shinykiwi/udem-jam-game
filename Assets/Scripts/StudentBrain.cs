@@ -91,7 +91,7 @@ public class StudentBrain : MonoBehaviour
                 break;
             case StudentState.Question:
                 Emote.EmoteQuestion();
-                //PopupManager.Instance.runEventPopup("FirstQuestion");
+                PopupManager.Instance?.runEventPopup("FirstQuestion");
                 break;
             case StudentState.Null:
                 StartCoroutine(RollDiceContinuously());

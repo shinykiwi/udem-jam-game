@@ -13,7 +13,7 @@ public class Debugger : MonoBehaviour
         {
 
             focusPoints.Value += 1;
-            //PopupManager.Instance.TestPopup();
+            PopupManager.Instance?.runEventPopup("Cheater");
         }
 
         if (Input.GetKeyDown(KeyCode.I))
