@@ -8,6 +8,7 @@ public class StudentBrain : MonoBehaviour
 {
 
     [SerializeField] private StatsContainer sc;
+    [SerializeField] private PointVariable focusPoint;
     public enum StudentState
     {
         Idle,
@@ -67,7 +68,7 @@ public class StudentBrain : MonoBehaviour
                     GameManager.Instance.BurnoutStudents--;
                     break;
                 case StudentState.Question:
-                    GameManager.Instance.FocusPoints++;
+                    focusPoint.Value++;
                     break;
             }
         }
@@ -248,7 +249,7 @@ public class StudentBrain : MonoBehaviour
             
             State = StudentState.BurntOut;
             StudentCounts.BurnoutCount++;
-            GameManager.Instance.FocusPoints--;
+            focusPoint.Value--;
             //Debug.Log("Success!");
         }
         else

@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sc: {fileID: 11400000, guid: 4c38a72be95724644ba86eb7ff47c8ea, type: 2}
+  focusPoint: {fileID: 11400000, guid: a301069654a190e4e9b1192aa2082ed3, type: 2}
   studentData: {fileID: 11400000, guid: a705cad7a57ff42319b41d0cf44530aa, type: 2}
 --- !u!1 &1640899427890782608
 GameObject:

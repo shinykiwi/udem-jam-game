@@ -7,11 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     
-    //Disable on build
-    [SerializeField] public bool debuggerMode = false;
-
     [SerializeField] private StatsContainer sc;
-    
+    [SerializeField] private PointVariable focusPoints;
 
     // Singleton
     public static GameManager Instance { get; private set; }
@@ -30,30 +27,16 @@ public class GameManager : MonoBehaviour
         }
 
         students = GameObject.FindObjectsByType<Student>(FindObjectsSortMode.None);
-    }
-    
-    
-    // Points
-    private int _focusPoints;
-    
-    // Stats
-    private float _engagement;
-    private float _comprehension;
-    private float _burnout;
-    
-    
-    // Events
-    public event Action<int> OnFocusPointsChanged;
-    
+    } 
 
     public void Purchase(Upgrade upgrade)
     {
         UpgradeItem upgradeItem = upgrade.getUpgradeItem();
         
-        if (FocusPoints >= upgradeItem.cost)
+        if (focusPoints.Value >= upgradeItem.cost)
         {
 
-            FocusPoints -= upgradeItem.cost;
+            focusPoints.Value -= upgradeItem.cost;
             sc.Engagement.Value += upgradeItem.engagementGain;
             sc.Comprehension.Value += upgradeItem.comprehensionGain;
             sc.Burnout.Value += upgradeItem.burnoutGain;
@@ -64,15 +47,7 @@ public class GameManager : MonoBehaviour
             SoundManager.PlaySound(SoundManager.SoundType.ERROR);
         }
     }
-    public int FocusPoints
-    {
-        get => _focusPoints;
-        set
-        {
-            _focusPoints = Mathf.Max(0, value);
-            OnFocusPointsChanged?.Invoke(_focusPoints);
-        } 
-    }
+
     
     // Number of attentive, learning, burnout students
     private int attentiveStudents;
@@ -131,28 +106,9 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
 
+        /*
         if (debuggerMode)
-        {
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-            
-                FocusPoints+=1;
-                //PopupManager.Instance.TestPopup();
-            }
-        
-            if (Input.GetKeyDown(KeyCode.I))
-            {
-                sc.Engagement.Value += 0.1f;
-            }
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                sc.Comprehension.Value += 0.1f;
-            }
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                sc.Burnout.Value += 0.1f;
-            }
-            
+        {   
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 string text = "PROGRESS REPORT"; 
@@ -165,6 +121,15 @@ public class GameManager : MonoBehaviour
                 Debug.Log(text);
             }
         }
+        */
         
+    }
+
+    private void OnDisable()
+    {
+        sc.Engagement.Value = 0;
+        sc.Comprehension.Value = 0;
+        sc.Burnout.Value = 0;
+        focusPoints.Value = 0;
     }
 }

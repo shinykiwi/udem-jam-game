@@ -5,16 +5,16 @@ using UnityEngine;
 public class FocusPoints : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textMeshPro;
-
+    [SerializeField] PointVariable focusPoints;
 
     public void Start()
     {
-        GameManager.Instance.OnFocusPointsChanged += SetFocusPoints;
+        focusPoints.OnValueChange += SetFocusPoints;
     }
 
-    public void SetFocusPoints(int val)
+    public void SetFocusPoints()
     {
         
-        textMeshPro.text = "Focus: " + val.ToString();
+        textMeshPro.text = "Focus: " + focusPoints.Value.ToString();
     }
 }

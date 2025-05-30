@@ -10,7 +10,8 @@ public class InfoManager : MonoBehaviour
     [SerializeField]TextMeshProUGUI descriptionText;
     [SerializeField]TextMeshProUGUI costText;
     [SerializeField]Button purchaseButton;
-    
+
+    [SerializeField] PointVariable focusPoints;
     public static InfoManager instance;
 
     public Action<Upgrade> OnUpgradePurchased;
@@ -72,7 +73,7 @@ public class InfoManager : MonoBehaviour
 
         
         ColorBlock colorBlock = purchaseButton.colors;
-        if (GameManager.Instance.FocusPoints >= upgradeItem.cost)
+        if (focusPoints.Value >= upgradeItem.cost)
         {
             colorBlock.normalColor = Color.green;
             colorBlock.highlightedColor = Color.green;

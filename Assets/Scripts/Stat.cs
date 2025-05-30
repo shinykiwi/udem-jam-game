@@ -13,6 +13,7 @@ public class Stat : MonoBehaviour
     public void Start()
     {
         stat.OnValueChange += SetStat;
+        SetStat();
     }
 
     public void SetStat()

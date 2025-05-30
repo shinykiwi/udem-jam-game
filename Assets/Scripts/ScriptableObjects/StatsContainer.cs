@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "StatsContainer", menuName = "Scriptable Objects/StatsContainer")]
+[CreateAssetMenu(fileName = "StatsContainer", menuName = "Scriptable Objects/Create new StatsContainer")]
 public class StatsContainer : ScriptableObject
 {
     public StatVariable Engagement;

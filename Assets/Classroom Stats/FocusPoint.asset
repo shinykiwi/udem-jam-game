@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90144886f76bcd742890e28a16d1f6f7, type: 3}
-  m_Name: 3.Burnout
+  m_Script: {fileID: 11500000, guid: a77a2acfa8b1c0e4cb3218564a74f451, type: 3}
+  m_Name: FocusPoint
   m_EditorClassIdentifier: 
   _value: 0

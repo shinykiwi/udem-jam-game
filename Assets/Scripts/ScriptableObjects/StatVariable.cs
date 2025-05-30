@@ -5,7 +5,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "StatVariable", menuName = "Scriptable Objects/Create new stat")]
 public class StatVariable : ScriptableObject
 {
-    [SerializeField] private float _value;
+    [SerializeField, Range(0f,1f)] private float _value;
     public Action OnValueChange;
 
 
