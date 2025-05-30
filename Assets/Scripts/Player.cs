@@ -33,7 +33,10 @@ public class Player : MonoBehaviour
             studentBrain.enterPreviousState();
             
             //studentBrain.State = StudentBrain.StudentState.Null;
+            
         }
+        
+        
         
     }
 

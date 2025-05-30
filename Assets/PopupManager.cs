@@ -65,15 +65,31 @@ public class PopupManager : MonoBehaviour
         }
     }
 
-    public void CreatePopup(PopupItem popupItem)
+    public void runEventPopup(string eventKey)
     {
-        if (currentPopup) return;
-        
+        if (eventPopups.ContainsKey(eventKey))
+        {
+            CreatePopup(eventPopups[eventKey]);
+            eventPopups.Remove(eventKey);
+        }
+    }
+
+    private void CreatePopup(PopupItem popupItem)
+    {
+        StartCoroutine(_waitForPopup());
         currentPopup = Instantiate(popupPrefab, transform);
         currentPopup.setPopup(popupItem);
     }
 
-    public void TestPopup()
+    private IEnumerator _waitForPopup()
+    {
+        while (currentPopup)
+        {
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    private void TestPopup()
     {
         CreatePopup(testPopup);
     }

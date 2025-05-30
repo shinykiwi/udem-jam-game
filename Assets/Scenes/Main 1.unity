@@ -1031,6 +1031,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debuggerMode: 1
+  _engagement:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 176bcda3d7877714480da26e40a05182, type: 2}
+  _comprehension:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: c889c9ff7e795f643948f3f4c48be6e4, type: 2}
+  _burnout:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 2e2a6c5c06d5862439642127989bd7af, type: 2}
 --- !u!4 &604979047
 Transform:
   m_ObjectHideFlags: 0
@@ -2213,10 +2225,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2335103143181715595, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2756939839186195187, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2301,10 +2309,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -11.840027
       objectReference: {fileID: 0}
-    - target: {fileID: 5789404888760431423, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6228476841664355096, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
       propertyPath: m_Name
       value: UpgradesCanvas
@@ -2313,15 +2317,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 200509892}
-    - target: {fileID: 8568164423515783432, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-      propertyPath: testPopup
-      value: 
-      objectReference: {fileID: 11400000, guid: 4627e24be17ef6b4fbd3b4acbf4d5974, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 5789404888760431423, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-    - {fileID: -540835000937901006, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
-    - {fileID: 5863577129084273866, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10943ed3819b55b4da5696846bb85648, type: 3}
