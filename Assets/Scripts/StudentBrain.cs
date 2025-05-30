@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 
 public class StudentBrain : MonoBehaviour
 {
+
+    [SerializeField] private StatsContainer sc;
     public enum StudentState
     {
         Idle,
@@ -88,7 +90,7 @@ public class StudentBrain : MonoBehaviour
                 break;
             case StudentState.Question:
                 Emote.EmoteQuestion();
-                PopupManager.Instance.runEventPopup("FirstQuestion");
+                //PopupManager.Instance.runEventPopup("FirstQuestion");
                 break;
             case StudentState.Null:
                 StartCoroutine(RollDiceContinuously());
@@ -188,7 +190,7 @@ public class StudentBrain : MonoBehaviour
     {
         
         // ex. 0.2 * 0.9 = 0.18
-        float learningRoll = studentData.learningTendency * GameManager.Instance.Comprehension;
+        float learningRoll = studentData.learningTendency * sc.Comprehension.Value;
 
         // ex. check if a random float is less than or equal to 0.18, thus passing the check
         // like rolling a die
@@ -209,7 +211,7 @@ public class StudentBrain : MonoBehaviour
     private bool RollAttentiveDice()
     {
         
-        float attentiveRoll = studentData.attentiveTendency * GameManager.Instance.Engagement;
+        float attentiveRoll = studentData.attentiveTendency * sc.Engagement.Value;
 
         // If the student is already attentive, they are more likely to stay attentive
         if (State == StudentState.Attentive)
@@ -229,7 +231,7 @@ public class StudentBrain : MonoBehaviour
     }
     private void RollBurntOutDice()
     {
-        float burnoutRoll = studentData.burnoutTendency * GameManager.Instance.Burnout;
+        float burnoutRoll = studentData.burnoutTendency * sc.Burnout.Value;
 
         float rand = Random.Range(0f, 1f);
         if (rand <= burnoutRoll)

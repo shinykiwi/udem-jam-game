@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a573d0995acb2409e97bd710b2c13d, type: 3}
+  m_Name: StatsContainer
+  m_EditorClassIdentifier: 
+  Engagement: {fileID: 11400000, guid: 82e77735ca9f409468dae318cd10a836, type: 2}
+  Comprehension: {fileID: 11400000, guid: da6b459e2f92cc1419c548bebf3262d9, type: 2}
+  Burnout: {fileID: 11400000, guid: e0c16e53f3c0d1c4abdfd05fbcf01b04, type: 2}

@@ -7,31 +7,16 @@ public class Stat : MonoBehaviour
 { 
     [SerializeField] TextMeshProUGUI statText;
     [SerializeField] Slider statSlider;
-    [SerializeField] MyEnum state;
-    
-    public enum MyEnum
-    {
-        Engagement, Comprehension, Burnout
-    }
 
+    [SerializeField] StatVariable stat;
+    
     public void Start()
     {
-        switch (state)
-        {
-            case MyEnum.Engagement:
-                GameManager.Instance.OnEngagementChanged += SetStat;
-                break;
-            case MyEnum.Comprehension:
-                GameManager.Instance.OnComprehensionChanged += SetStat;
-                break; 
-            case MyEnum.Burnout:
-                GameManager.Instance.OnBurnoutChanged += SetStat;
-                break;
-        }
+        stat.OnValueChange += SetStat;
     }
 
-    public void SetStat(float stat)
+    public void SetStat()
     {
-        statSlider.value = stat;
+        statSlider.value = stat.Value;
     }
 }
